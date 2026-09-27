@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>實驗室 · JiangKit</title>
+<meta name="description" content="創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="../index.html"><span class="mark" aria-hidden="true">匠</span>JiangKit <span class="zh">匠具</span></a>
+<nav aria-label="primary"><a href="../index.html">首頁</a><a href="../index.html#tools" aria-current="page">工具</a><a href="../products.html">產品</a><a href="../security.html">安全</a><a href="../index.html#pricing">免費 vs Pro</a></nav>
+<a class="lang" href="../en/category/experimental.html" hreflang="en" lang="en">English</a>
+</div></header>
+<main id="main">
+<section class="wrap sec"><p class="crumbs"><a href="../index.html#tools">工具</a> /</p>
+<h1>🧪 實驗室 <span class="muted small">Experimental lab</span></h1>
+<nav class="catnav" aria-label="categories"><a href="media.html">🎬 影像與影片</a><a href="social.html">📣 社群</a><a href="docs.html">📄 文件與文字</a><a href="data.html">📊 資料表</a><a href="files.html">📁 檔案管理</a><a href="comic.html">🎞️ 漫畫與分鏡</a><a href="web.html">🌐 網頁與品牌</a><a href="ai.html">🧠 AI 視覺</a><a href="system.html">🖥️ 系統</a><a href="experimental.html" aria-current="page">🧪 實驗室</a></nav>
+<div class="tools"><article class="tool" id="experimental.git_symphony">
+<header><h3><code>experimental git_symphony</code></h3><span class="badge free">免費</span></header>
+<p>把 git 歷史變成音樂</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental git_symphony --repo demo-repo
+commits: 14  authors: 1  duration: 3.5s  chords: 0
+  demo                     -&gt; piano    (GM   0)  14 notes
+wrote /tmp/jk_demo/s.mid
+wrote /tmp/jk_demo/s.wav
+</code></pre>
+</article><article class="tool" id="experimental.shell_timemachine">
+<header><h3><code>experimental shell_timemachine</code></h3><span class="badge free">免費</span></header>
+<p>Shell 時光機：記錄指令並回答「我昨天在哪個資料夾做了什麼」</p>
+<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental shell_timemachine log -n 5
+#1     2026-09-27 13:53:28 [ok ]  /tmp/jk_demo/repo$ npm run build
+#2     2026-09-27 13:53:28 [E1 ]  /tmp/jk_demo/repo$ export API_TOKEN=[REDACTED] &amp;&amp; npm run build
+</code></pre>
+</article><article class="tool" id="experimental.image_to_level">
+<header><h3><code>experimental image_to_level</code></h3><span class="badge free">免費</span></header>
+<p>照片變成可玩的終端機平台關卡</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental image_to_level rocket.jpg --headless --width 64 --height 18
+################################################################
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                               ==                             #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#      ==                                                      #
+#       o     ==               o                               #
+…</code></pre>
+</article><article class="tool" id="experimental.data_sonify">
+<header><h3><code>experimental data_sonify</code></h3><span class="badge free">免費</span></header>
+<p>用耳朵聽 CSV 資料</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental data_sonify sales.csv
+6 rows x 1 voices (sales), 1000 ms/row, 6.8s audio -&gt; /tmp/jk_demo/son.wav
+</code></pre>
+</article><article class="tool" id="experimental.code_weather">
+<header><h3><code>experimental code_weather</code></h3><span class="badge free">免費</span></header>
+<p>程式碼庫天氣預報（變動、複雜度）</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<p class="cli"><span class="k">指令範例</span><code>jiang experimental code_weather demo-repo --html code_weather.html</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/code_weather.png" alt="程式碼天氣 HTML 報告 — experimental.code_weather" width="1200" height="800" loading="lazy" decoding="async"><figcaption>程式碼天氣 HTML 報告</figcaption></figure></div><pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental code_weather demo-repo
+CODE WEATHER for /tmp/jk_demo/repo  (churn window 90 days)
+
++----------------------------------------------------------------------+
+|&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27; (root) &#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;|
+|&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27; Rain &#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;|
+|&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27; risk 0.53 &#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;|
++----------------------------------------------------------------------+
+[/\] Thunderstorms  [&#x27;&#x27;] Rain  [==] Overcast  [..] Fog  [o-] Partly cloudy  [  ] Sunny
+
+🌧 Rain          over (root)               (26°C, churn 688 lines, max complexity 1, 334 TODOs, 0% covered by tests)
+    eye of the storm: mod0.py (worst: f0) - changes are landing on fragile ground: review carefully
+
+Outlook: carry an umbrella in (root).
+
+HTML report -&gt; /tmp/jk_demo/reports/code_weather.html
+</code></pre>
+</article><article class="tool" id="experimental.entropy_clock">
+<header><h3><code>experimental entropy_clock</code></h3><span class="badge free">免費</span></header>
+<p>系統越亂越凌亂的終端時鐘</p>
+<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental entropy_clock --once --mess 0.35
+%           &#x27;        +        &#x27;                             
+        █   █@█=        █&amp;█@&amp; ██&#x27;~*     &#x27; █@███ =██%█       
+        ██       █   █   █         █  :█       █     █      
+          █    ████      &#x27;`.°██  .███       █&amp;███    ;   %  
+ ,    *   █       █   █       █     █       █       @       
+        ;~█  ██&#x27;██       █████ ██+~        █; ██   █  *     
+             &amp;                                              
+
+entropy [##########--------------------] 0.35  (restless)
+disk 28% io 0.00 | mem 67% | procs 309 (spread 0.82, churn 0.10)
+</code></pre>
+</article><article class="tool" id="experimental.regex_from_examples">
+<header><h3><code>experimental regex_from_examples</code></h3><span class="badge free">免費</span></header>
+<p>從正反例子自動合成正規表示式</p>
+<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental regex_from_examples -p 2026-09-27 -p 1999-01-05 -p 2024-12-31 -n 2026/09/27 -n 27-09-2026 -n hello
+regex (full match): \d{4}-\d{2}-\d{2}
+anchored form     : ^\d{4}-\d{2}-\d{2}$
+accuracy          : 100.0% on 3 positive / 3 negative examples
+
+這個正規表示式要求「整個字串」從頭到尾依序符合：
+  1. 剛好 4 個數字（0–9）
+  2. 一個連字號「-」
+  3. 剛好 2 個數字（0–9）
+  4. 一個連字號「-」
+  5. 剛好 2 個數字（0–9）
+</code></pre>
+</article><article class="tool" id="experimental.dream_diff">
+<header><h3><code>experimental dream_diff</code></h3><span class="badge free">免費</span></header>
+<p>語意層級的文字差異比對（HTML 報告）</p>
+<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<p class="cli"><span class="k">指令範例</span><code>jiang experimental dream_diff v1.txt v2.txt --html diff.html</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/dream_diff.png" alt="夢境差異 HTML 報告 — experimental.dream_diff" width="1200" height="800" loading="lazy" decoding="async"><figcaption>夢境差異 HTML 報告</figcaption></figure></div><pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental dream_diff v1.txt v2.txt
+SEMANTIC DIFF: it sounds more certain; hard obligations 0 -&gt; 1; 3 x numbers changed
+
+== Numbers changed (3)
+   - The fee is 1,000 NTD per month.
+   + The fee is 1,200 NTD per month.
+       * number changed: 1,000 NTD -&gt; 1,200 NTD (+20%)
+   - Refunds may be requested within 7 days.
+   + Refunds must be requested within 3 days.
+       * number changed: 7 days -&gt; 3 days (-57%)
+       * obligation strengthened: may -&gt; must
+       * more certain / assertive
+   - We will reply soon.
+   + We will definitely reply within 24 hours.
+       * number added: 24 hours
+       * more certain / assertive
+…</code></pre>
+</article></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<p>以 MIT 授權釋出免費層；Pro 模組為商業授權。所有示範輸出皆由本套件實際執行產生，輸入為公有領域 / CC0 範例圖或程式合成資料。</p>
+<p class="muted">© 2026 JiangKit 匠具 · <a href="../security.html">安全</a> · <a href="https://github.com/Jinversedigital/jiangkit" rel="noopener">GitHub</a> · MIT / Commercial · No cookies, no analytics.</p>
+</div></footer>
+</body>
+</html>

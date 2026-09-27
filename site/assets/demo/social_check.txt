@@ -1,0 +1,4 @@
+$ jiang social social check -t '今天的咖啡 ☕ 新作品上線！…' -p IG,X,Threads
+[OK ] IG           32/2200   tags 2/30  
+[OK ] X            47/280    tags 2/3  
+[BAD] Threads      32/500    tags 2/1  2 hashtags > max 1

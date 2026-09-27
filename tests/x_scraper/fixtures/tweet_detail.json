@@ -1,0 +1,265 @@
+{
+ "data": {
+  "threaded_conversation_with_injections_v2": {
+   "instructions": [
+    {
+     "type": "TimelineAddEntries",
+     "entries": [
+      {
+       "entryId": "tweet-1830000000000000020",
+       "sortIndex": "1830000000000000020",
+       "content": {
+        "entryType": "TimelineTimelineItem",
+        "__typename": "TimelineTimelineItem",
+        "itemContent": {
+         "itemType": "TimelineTweet",
+         "__typename": "TimelineTweet",
+         "tweet_results": {
+          "result": {
+           "__typename": "Tweet",
+           "rest_id": "1830000000000000020",
+           "core": {
+            "user_results": {
+             "result": {
+              "__typename": "User",
+              "rest_id": "8956389",
+              "legacy": {
+               "followers_count": 10
+              },
+              "core": {
+               "screen_name": "ai_idol_mei",
+               "name": "Mei 美"
+              }
+             }
+            }
+           },
+           "legacy": {
+            "id_str": "1830000000000000020",
+            "full_text": "大家喜歡哪一套？",
+            "created_at": "Fri Sep 25 01:00:00 +0000 2026",
+            "favorite_count": 100,
+            "retweet_count": 0,
+            "reply_count": 3,
+            "quote_count": 1,
+            "bookmark_count": 2,
+            "lang": "zh",
+            "conversation_id_str": "1830000000000000020",
+            "entities": {
+             "hashtags": [],
+             "urls": [],
+             "user_mentions": []
+            }
+           },
+           "views": {
+            "count": "5000",
+            "state": "EnabledWithCount"
+           }
+          }
+         },
+         "tweetDisplayType": "Tweet"
+        }
+       }
+      },
+      {
+       "entryId": "conversationthread-21",
+       "content": {
+        "entryType": "TimelineTimelineModule",
+        "__typename": "TimelineTimelineModule",
+        "items": [
+         {
+          "entryId": "conversationthread-21-tweet-1830000000000000021",
+          "item": {
+           "itemContent": {
+            "itemType": "TimelineTweet",
+            "tweet_results": {
+             "result": {
+              "__typename": "Tweet",
+              "rest_id": "1830000000000000021",
+              "core": {
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "3967419",
+                 "legacy": {
+                  "followers_count": 10
+                 },
+                 "core": {
+                  "screen_name": "fan_a",
+                  "name": "粉絲A"
+                 }
+                }
+               }
+              },
+              "legacy": {
+               "id_str": "1830000000000000021",
+               "full_text": "第二套！",
+               "created_at": "Fri Sep 25 01:05:00 +0000 2026",
+               "favorite_count": 10,
+               "retweet_count": 0,
+               "reply_count": 0,
+               "quote_count": 1,
+               "bookmark_count": 2,
+               "lang": "zh",
+               "conversation_id_str": "1830000000000000020",
+               "entities": {
+                "hashtags": [],
+                "urls": [],
+                "user_mentions": []
+               },
+               "in_reply_to_status_id_str": "1830000000000000020"
+              },
+              "views": {
+               "count": "0",
+               "state": "EnabledWithCount"
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "entryId": "conversationthread-21-tweet-1830000000000000022",
+          "item": {
+           "itemContent": {
+            "itemType": "TimelineTweet",
+            "tweet_results": {
+             "result": {
+              "__typename": "Tweet",
+              "rest_id": "1830000000000000022",
+              "core": {
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "8956389",
+                 "legacy": {
+                  "followers_count": 10
+                 },
+                 "core": {
+                  "screen_name": "ai_idol_mei",
+                  "name": "Mei 美"
+                 }
+                }
+               }
+              },
+              "legacy": {
+               "id_str": "1830000000000000022",
+               "full_text": "謝謝～",
+               "created_at": "Fri Sep 25 01:10:00 +0000 2026",
+               "favorite_count": 3,
+               "retweet_count": 0,
+               "reply_count": 0,
+               "quote_count": 1,
+               "bookmark_count": 2,
+               "lang": "zh",
+               "conversation_id_str": "1830000000000000020",
+               "entities": {
+                "hashtags": [],
+                "urls": [],
+                "user_mentions": []
+               },
+               "in_reply_to_status_id_str": "1830000000000000021"
+              },
+              "views": {
+               "count": "0",
+               "state": "EnabledWithCount"
+              }
+             }
+            }
+           }
+          }
+         }
+        ],
+        "displayType": "VerticalConversation"
+       }
+      },
+      {
+       "entryId": "conversationthread-23",
+       "content": {
+        "entryType": "TimelineTimelineModule",
+        "__typename": "TimelineTimelineModule",
+        "items": [
+         {
+          "entryId": "conversationthread-23-tweet-1830000000000000023",
+          "item": {
+           "itemContent": {
+            "itemType": "TimelineTweet",
+            "tweet_results": {
+             "result": {
+              "__typename": "Tweet",
+              "rest_id": "1830000000000000023",
+              "core": {
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "3975338",
+                 "legacy": {
+                  "followers_count": 10
+                 },
+                 "core": {
+                  "screen_name": "fan_b",
+                  "name": "粉絲B"
+                 }
+                }
+               }
+              },
+              "legacy": {
+               "id_str": "1830000000000000023",
+               "full_text": "都好看 #AI美女",
+               "created_at": "Fri Sep 25 02:00:00 +0000 2026",
+               "favorite_count": "1.2K",
+               "retweet_count": 0,
+               "reply_count": 0,
+               "quote_count": 1,
+               "bookmark_count": 2,
+               "lang": "zh",
+               "conversation_id_str": "1830000000000000020",
+               "entities": {
+                "hashtags": [
+                 {
+                  "indices": [
+                   0,
+                   1
+                  ],
+                  "text": "AI美女"
+                 }
+                ],
+                "urls": [],
+                "user_mentions": []
+               },
+               "in_reply_to_status_id_str": "1830000000000000020"
+              },
+              "views": {
+               "count": "0",
+               "state": "EnabledWithCount"
+              }
+             }
+            }
+           }
+          }
+         }
+        ],
+        "displayType": "VerticalConversation"
+       }
+      },
+      {
+       "entryId": "cursor-bottom-x",
+       "content": {
+        "entryType": "TimelineTimelineItem",
+        "itemContent": {
+         "itemType": "TimelineTimelineCursor",
+         "__typename": "TimelineTimelineCursor",
+         "value": "DETAILCURSOR",
+         "cursorType": "Bottom"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "type": "TimelineTerminateTimeline",
+     "direction": "Top"
+    }
+   ]
+  }
+ }
+}

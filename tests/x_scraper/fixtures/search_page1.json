@@ -1,0 +1,377 @@
+{
+ "data": {
+  "search_by_raw_query": {
+   "search_timeline": {
+    "timeline": {
+     "instructions": [
+      {
+       "type": "TimelineClearCache"
+      },
+      {
+       "type": "TimelineAddEntries",
+       "entries": [
+        {
+         "entryId": "tweet-1830000000000000001",
+         "sortIndex": "1830000000000000001",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "Tweet",
+             "rest_id": "1830000000000000001",
+             "core": {
+              "user_results": {
+               "result": {
+                "__typename": "User",
+                "rest_id": "8956389",
+                "legacy": {
+                 "followers_count": 10
+                },
+                "core": {
+                 "screen_name": "ai_idol_mei",
+                 "name": "Mei 美"
+                }
+               }
+              }
+             },
+             "legacy": {
+              "id_str": "1830000000000000001",
+              "full_text": "#AI美女 新作品上線 ✨ #AIart",
+              "created_at": "Sun Sep 20 10:00:00 +0000 2026",
+              "favorite_count": 1520,
+              "retweet_count": 88,
+              "reply_count": 12,
+              "quote_count": 1,
+              "bookmark_count": 2,
+              "lang": "zh",
+              "conversation_id_str": "1830000000000000001",
+              "entities": {
+               "hashtags": [
+                {
+                 "indices": [
+                  0,
+                  1
+                 ],
+                 "text": "AI美女"
+                },
+                {
+                 "indices": [
+                  0,
+                  1
+                 ],
+                 "text": "AIart"
+                }
+               ],
+               "urls": [],
+               "user_mentions": [],
+               "media": [
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/AAA111.jpg",
+                 "id_str": "9"
+                }
+               ]
+              },
+              "extended_entities": {
+               "media": [
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/AAA111.jpg",
+                 "id_str": "9"
+                },
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/AAA222.png",
+                 "id_str": "9"
+                }
+               ]
+              }
+             },
+             "views": {
+              "count": "45210",
+              "state": "EnabledWithCount"
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet"
+          }
+         }
+        },
+        {
+         "entryId": "tweet-1830000000000000002",
+         "sortIndex": "1830000000000000002",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "TweetWithVisibilityResults",
+             "tweet": {
+              "__typename": "Tweet",
+              "rest_id": "1830000000000000002",
+              "core": {
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "9201878",
+                 "legacy": {
+                  "followers_count": 10,
+                  "screen_name": "reels_maker",
+                  "name": "Reels 工作室"
+                 }
+                }
+               }
+              },
+              "legacy": {
+               "id_str": "1830000000000000002",
+               "full_text": "Reels 教學影片 #AIart",
+               "created_at": "Mon Sep 21 08:30:00 +0000 2026",
+               "favorite_count": 300,
+               "retweet_count": 20,
+               "reply_count": 5,
+               "quote_count": 1,
+               "bookmark_count": 2,
+               "lang": "zh",
+               "conversation_id_str": "1830000000000000002",
+               "entities": {
+                "hashtags": [
+                 {
+                  "indices": [
+                   0,
+                   1
+                  ],
+                  "text": "AIart"
+                 }
+                ],
+                "urls": [],
+                "user_mentions": [],
+                "media": [
+                 {
+                  "type": "video",
+                  "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1/pu/img/thumb.jpg",
+                  "video_info": {
+                   "variants": [
+                    {
+                     "content_type": "application/x-mpegURL",
+                     "url": "https://video.twimg.com/x.m3u8"
+                    },
+                    {
+                     "content_type": "video/mp4",
+                     "bitrate": 832000,
+                     "url": "https://video.twimg.com/ext_tw_video/2/pu/vid/1080x1920/abc.mp4?low"
+                    },
+                    {
+                     "content_type": "video/mp4",
+                     "bitrate": 2176000,
+                     "url": "https://video.twimg.com/ext_tw_video/2/pu/vid/1080x1920/abc.mp4"
+                    }
+                   ]
+                  }
+                 }
+                ]
+               },
+               "extended_entities": {
+                "media": [
+                 {
+                  "type": "video",
+                  "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1/pu/img/thumb.jpg",
+                  "video_info": {
+                   "variants": [
+                    {
+                     "content_type": "application/x-mpegURL",
+                     "url": "https://video.twimg.com/x.m3u8"
+                    },
+                    {
+                     "content_type": "video/mp4",
+                     "bitrate": 832000,
+                     "url": "https://video.twimg.com/ext_tw_video/2/pu/vid/1080x1920/abc.mp4?low"
+                    },
+                    {
+                     "content_type": "video/mp4",
+                     "bitrate": 2176000,
+                     "url": "https://video.twimg.com/ext_tw_video/2/pu/vid/1080x1920/abc.mp4"
+                    }
+                   ]
+                  }
+                 }
+                ]
+               }
+              },
+              "views": {
+               "count": "9999",
+               "state": "EnabledWithCount"
+              }
+             },
+             "limitedActionResults": {
+              "limited_actions": []
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet"
+          }
+         }
+        },
+        {
+         "entryId": "promoted-tweet-1830000000000000999",
+         "sortIndex": "1830000000000000999",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "Tweet",
+             "rest_id": "1830000000000000999",
+             "core": {
+              "user_results": {
+               "result": {
+                "__typename": "User",
+                "rest_id": "4109961",
+                "legacy": {
+                 "followers_count": 10
+                },
+                "core": {
+                 "screen_name": "brand",
+                 "name": "Ad Brand"
+                }
+               }
+              }
+             },
+             "legacy": {
+              "id_str": "1830000000000000999",
+              "full_text": "Buy now",
+              "created_at": "Tue Sep 22 00:00:00 +0000 2026",
+              "favorite_count": 0,
+              "retweet_count": 0,
+              "reply_count": 0,
+              "quote_count": 1,
+              "bookmark_count": 2,
+              "lang": "zh",
+              "conversation_id_str": "1830000000000000999",
+              "entities": {
+               "hashtags": [],
+               "urls": [],
+               "user_mentions": []
+              }
+             },
+             "views": {
+              "count": "0",
+              "state": "EnabledWithCount"
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet",
+           "promotedMetadata": {
+            "advertiser_results": {}
+           }
+          }
+         }
+        },
+        {
+         "entryId": "tweet-1830000000000000003",
+         "sortIndex": "1830000000000000003",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "Tweet",
+             "rest_id": "1830000000000000003",
+             "core": {
+              "user_results": {
+               "result": {
+                "__typename": "User",
+                "rest_id": "9471124",
+                "legacy": {
+                 "followers_count": 10
+                },
+                "core": {
+                 "screen_name": "long_writer",
+                 "name": "長文作者"
+                }
+               }
+              }
+             },
+             "legacy": {
+              "id_str": "1830000000000000003",
+              "full_text": "截斷的文字…",
+              "created_at": "Tue Sep 22 23:59:59 +0000 2026",
+              "favorite_count": 7,
+              "retweet_count": 0,
+              "reply_count": 0,
+              "quote_count": 1,
+              "bookmark_count": 2,
+              "lang": "zh",
+              "conversation_id_str": "1830000000000000003",
+              "entities": {
+               "hashtags": [],
+               "urls": [],
+               "user_mentions": []
+              }
+             },
+             "views": {
+              "count": "100",
+              "state": "EnabledWithCount"
+             },
+             "note_tweet": {
+              "is_expandable": true,
+              "note_tweet_results": {
+               "result": {
+                "id": "N1",
+                "text": "這是一篇很長的長文 #長文 完整內容",
+                "entity_set": {
+                 "hashtags": [
+                  {
+                   "text": "長文"
+                  }
+                 ]
+                }
+               }
+              }
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet"
+          }
+         }
+        },
+        {
+         "entryId": "cursor-top-TOP1",
+         "sortIndex": "0",
+         "content": {
+          "entryType": "TimelineTimelineCursor",
+          "__typename": "TimelineTimelineCursor",
+          "value": "TOP1",
+          "cursorType": "Top"
+         }
+        },
+        {
+         "entryId": "cursor-bottom-BOTTOM1",
+         "sortIndex": "0",
+         "content": {
+          "entryType": "TimelineTimelineCursor",
+          "__typename": "TimelineTimelineCursor",
+          "value": "BOTTOM1",
+          "cursorType": "Bottom"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,22 @@
+$ jiang experimental image_to_level rocket.jpg --headless --width 64 --height 18
+################################################################
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                               ==                             #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#                                                              #
+#      ==                                                      #
+#       o     ==               o                               #
+#              o                                               #
+# S                o                o               ^^^^   ^ E #
+########################################################~#######
+
+platforms=6 spikes=5 lava=1 coins=5 repairs=0
+SOLVED: exit reached in 61 ticks by the solver, coins collected on the way 2/5

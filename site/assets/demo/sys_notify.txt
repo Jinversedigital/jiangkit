@@ -1,0 +1,3 @@
+$ jiang system sys notify -t 'Render done' -m 'reel.mp4 ✔'
+usage: jiang system sys [-h] {notify,run,history,ports,wait-port,proc} ...
+jiang system sys: error: unrecognized arguments: -m

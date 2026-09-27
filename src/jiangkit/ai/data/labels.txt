@@ -1,0 +1,34 @@
+# auto_tagger label file
+# [group] starts a label group: labels inside a group compete (softmax), one winner per group.
+# "label: prompt A | prompt B" = several prompts averaged for one label (prompt ensembling).
+# Lines without ":" use the template "a photo of {label}".
+
+[shot]
+close-up portrait: a close-up portrait photo of a face | a headshot
+half body: a waist-up photo of a person
+full body: a full body photo of a person standing
+no person: a photo with no people | an empty scene | an object
+
+[scene]
+cafe: a photo inside a cafe | a coffee shop interior
+street: a city street | an urban street scene
+bedroom: a bedroom interior
+beach: a beach by the sea
+night city: a city at night with neon lights
+nature: a landscape with trees and mountains
+studio: a studio photo with plain background
+space: outer space | a rocket or astronaut
+
+[style]
+photo: a real photograph
+anime: an anime illustration | a manga drawing
+comic panel: a comic book panel with speech bubbles
+3d render: a 3d render
+screenshot: a screenshot of a website or app with text
+
+[subject]
+woman: a photo of a woman
+man: a photo of a man
+cat: a photo of a cat
+dog: a photo of a dog
+food: a photo of food | a cup of coffee

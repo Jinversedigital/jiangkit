@@ -1,0 +1,7 @@
+$ jiang docs doc from-images coffee.jpg astro.jpg -o album.pdf
+Combined 2 images -> album.pdf
+$ jiang docs doc split album.pdf --outdir pages/
+Split into 2 files in pages
+$ ls pages/
+album_p001.pdf
+album_p002.pdf

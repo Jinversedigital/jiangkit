@@ -1,0 +1,3 @@
+$ jiang docs text count demo.srt
+source                           chars   no-sp     CJK   words   mixed  lines
+/tmp/jk_demo/demo.srt              167     146      39      30      69     12

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Tabular data · JiangKit</title>
+<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="../index.html"><span class="mark" aria-hidden="true">匠</span>JiangKit <span class="zh">匠具</span></a>
+<nav aria-label="primary"><a href="../index.html">Home</a><a href="../index.html#tools" aria-current="page">Tools</a><a href="../products.html">Products</a><a href="../security.html">Security</a><a href="../index.html#pricing">Free vs Pro</a></nav>
+<a class="lang" href="../../category/data.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a>
+</div></header>
+<main id="main">
+<section class="wrap sec"><p class="crumbs"><a href="../index.html#tools">Tools</a> /</p>
+<h1>📊 Tabular data <span class="muted small">資料表</span></h1>
+<nav class="catnav" aria-label="categories"><a href="media.html">🎬 Images &amp; video</a><a href="social.html">📣 Social</a><a href="docs.html">📄 Documents &amp; text</a><a href="data.html" aria-current="page">📊 Tabular data</a><a href="files.html">📁 File management</a><a href="comic.html">🎞️ Comics &amp; storyboards</a><a href="web.html">🌐 Web &amp; brand</a><a href="ai.html">🧠 AI vision</a><a href="system.html">🖥️ System</a><a href="experimental.html">🧪 Experimental lab</a></nav>
+<div class="tools"><article class="tool" id="data.data">
+<header><h3><code>data data</code></h3><span class="badge free">Free</span></header>
+<p>CSV/Excel/JSON convert, merge, dedupe, filter, sort, stats, charts</p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[data]&quot;</code></p>
+<p class="cli"><span class="k">CLI example</span><code>jiang data data chart sales.csv --x month --y sales --kind bar</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/data_chart.png" alt="Bar chart output — data.data" width="1200" height="660" loading="lazy" decoding="async"><figcaption>Bar chart output</figcaption></figure></div><pre class="term" tabindex="0" aria-label="Real output"><code>$ jiang data data stats sales.csv
+Rows: 6  Columns: 2
+
+Column overview:
+  month                    str        nulls=0      unique=6
+  sales                    int64      nulls=0      unique=6
+
+Numeric summary:
+       count     mean     std    min    25%    50%    75%    max
+sales    6.0  213.333  75.277  120.0  157.5  210.0  270.0  310.0
+
+Top values of &#x27;month&#x27;:
+  1月: 1
+  2月: 1
+  3月: 1
+  4月: 1
+…</code></pre>
+</article></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<p>Free tier released under MIT; Pro modules are commercially licensed. Every demo output was produced by actually running the tools on public-domain / CC0 sample images or synthetic data.</p>
+<p class="muted">© 2026 JiangKit 匠具 · <a href="../security.html">Security</a> · <a href="https://github.com/Jinversedigital/jiangkit" rel="noopener">GitHub</a> · MIT / Commercial · No cookies, no analytics.</p>
+</div></footer>
+</body>
+</html>

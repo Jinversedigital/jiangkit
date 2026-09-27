@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>影像與影片 · JiangKit</title>
+<meta name="description" content="創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="../index.html"><span class="mark" aria-hidden="true">匠</span>JiangKit <span class="zh">匠具</span></a>
+<nav aria-label="primary"><a href="../index.html">首頁</a><a href="../index.html#tools" aria-current="page">工具</a><a href="../products.html">產品</a><a href="../security.html">安全</a><a href="../index.html#pricing">免費 vs Pro</a></nav>
+<a class="lang" href="../en/category/media.html" hreflang="en" lang="en">English</a>
+</div></header>
+<main id="main">
+<section class="wrap sec"><p class="crumbs"><a href="../index.html#tools">工具</a> /</p>
+<h1>🎬 影像與影片 <span class="muted small">Images &amp; video</span></h1>
+<nav class="catnav" aria-label="categories"><a href="media.html" aria-current="page">🎬 影像與影片</a><a href="social.html">📣 社群</a><a href="docs.html">📄 文件與文字</a><a href="data.html">📊 資料表</a><a href="files.html">📁 檔案管理</a><a href="comic.html">🎞️ 漫畫與分鏡</a><a href="web.html">🌐 網頁與品牌</a><a href="ai.html">🧠 AI 視覺</a><a href="system.html">🖥️ 系統</a><a href="experimental.html">🧪 實驗室</a></nav>
+<div class="tools"><article class="tool" id="media.img">
+<header><h3><code>media img</code></h3><span class="badge free">免費</span></header>
+<p>批次圖片：IG/Reels/X 尺寸、浮水印、去 EXIF、轉檔、找重複</p>
+<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<p class="cli"><span class="k">指令範例</span><code>jiang media img fit coffee.jpg -p ig-portrait -o img_fit/ &amp;&amp; jiang media img watermark img_fit/coffee.jpg --text &#x27;© 匠具 JiangKit&#x27; --opacity 0.7</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/img_input.jpg" alt="輸入（scikit-image 公有領域範例） — media.img" width="600" height="400" loading="lazy" decoding="async"><figcaption>輸入（scikit-image 公有領域範例）</figcaption></figure><figure class="shot"><img src="../assets/demo/img_fit_watermark.jpg" alt="輸出：IG 直式 4:5 ＋ 浮水印，EXIF 已移除 — media.img" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>輸出：IG 直式 4:5 ＋ 浮水印，EXIF 已移除</figcaption></figure></div>
+</article><article class="tool" id="media.video">
+<header><h3><code>media video</code></h3><span class="badge free">免費</span></header>
+<p>ffmpeg 影片：剪輯、合併、9:16、抽幀、GIF、字幕、自動字幕</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[video]&quot;</code></p>
+<p class="cli"><span class="k">指令範例</span><code>jiang media video vertical clip.mp4 --size 540x960 -o vertical.mp4</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/video_vertical.jpg" alt="9:16 直式輸出的影格 — media.video" width="738" height="320" loading="lazy" decoding="async"><figcaption>9:16 直式輸出的影格</figcaption></figure></div>
+</article><article class="tool" id="media.beat_reels">
+<header><h3><code>media beat_reels</code></h3><span class="badge pro">Pro</span></header>
+<p>依音樂節拍自動剪直式 Reels</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[media]&quot;</code></p>
+<p class="cli"><span class="k">指令範例</span><code>jiang media beat_reels --music beat.wav --media imgs/ --size 540x960 --texts &#x27;咖啡日常|Coffee time|太空漫步|Launch!&#x27; --fit blur</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/beat_reels.jpg" alt="依節拍切換的 Reels 影格 — media.beat_reels" width="738" height="320" loading="lazy" decoding="async"><figcaption>依節拍切換的 Reels 影格</figcaption></figure></div>
+</article><article class="tool" id="media.best_frame">
+<header><h3><code>media best_frame</code></h3><span class="badge pro">Pro</span></header>
+<p>從影片挑最佳縮圖（清晰度/人臉/構圖）</p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[media]&quot;</code></p>
+<p class="cli"><span class="k">指令範例</span><code>jiang media best_frame video.mp4 -n 4 --samples 40</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/best_frame.jpg" alt="自動挑出的最佳縮圖 — media.best_frame" width="1480" height="410" loading="lazy" decoding="async"><figcaption>自動挑出的最佳縮圖</figcaption></figure></div>
+</article></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<p>以 MIT 授權釋出免費層；Pro 模組為商業授權。所有示範輸出皆由本套件實際執行產生，輸入為公有領域 / CC0 範例圖或程式合成資料。</p>
+<p class="muted">© 2026 JiangKit 匠具 · <a href="../security.html">安全</a> · <a href="https://github.com/Jinversedigital/jiangkit" rel="noopener">GitHub</a> · MIT / Commercial · No cookies, no analytics.</p>
+</div></footer>
+</body>
+</html>

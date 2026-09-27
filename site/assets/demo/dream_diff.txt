@@ -1,0 +1,38 @@
+$ jiang experimental dream_diff v1.txt v2.txt
+SEMANTIC DIFF: it sounds more certain; hard obligations 0 -> 1; 3 x numbers changed
+
+== Numbers changed (3)
+   - The fee is 1,000 NTD per month.
+   + The fee is 1,200 NTD per month.
+       * number changed: 1,000 NTD -> 1,200 NTD (+20%)
+   - Refunds may be requested within 7 days.
+   + Refunds must be requested within 3 days.
+       * number changed: 7 days -> 3 days (-57%)
+       * obligation strengthened: may -> must
+       * more certain / assertive
+   - We will reply soon.
+   + We will definitely reply within 24 hours.
+       * number added: 24 hours
+       * more certain / assertive
+       * words: -soon +within
+
+== Obligation shifted (1)
+   - Refunds may be requested within 7 days.
+   + Refunds must be requested within 3 days.
+       * number changed: 7 days -> 3 days (-57%)
+       * obligation strengthened: may -> must
+       * more certain / assertive
+
+== Certainty shifted (2)
+   - Refunds may be requested within 7 days.
+   + Refunds must be requested within 3 days.
+       * number changed: 7 days -> 3 days (-57%)
+       * obligation strengthened: may -> must
+       * more certain / assertive
+   - We will reply soon.
+   + We will definitely reply within 24 hours.
+       * number added: 24 hours
+       * more certain / assertive
+       * words: -soon +within
+
+HTML -> /tmp/jk_demo/reports/dream_diff.html

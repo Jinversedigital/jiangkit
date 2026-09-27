@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Social · JiangKit</title>
+<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="../index.html"><span class="mark" aria-hidden="true">匠</span>JiangKit <span class="zh">匠具</span></a>
+<nav aria-label="primary"><a href="../index.html">Home</a><a href="../index.html#tools" aria-current="page">Tools</a><a href="../products.html">Products</a><a href="../security.html">Security</a><a href="../index.html#pricing">Free vs Pro</a></nav>
+<a class="lang" href="../../category/social.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a>
+</div></header>
+<main id="main">
+<section class="wrap sec"><p class="crumbs"><a href="../index.html#tools">Tools</a> /</p>
+<h1>📣 Social <span class="muted small">社群</span></h1>
+<nav class="catnav" aria-label="categories"><a href="media.html">🎬 Images &amp; video</a><a href="social.html" aria-current="page">📣 Social</a><a href="docs.html">📄 Documents &amp; text</a><a href="data.html">📊 Tabular data</a><a href="files.html">📁 File management</a><a href="comic.html">🎞️ Comics &amp; storyboards</a><a href="web.html">🌐 Web &amp; brand</a><a href="ai.html">🧠 AI vision</a><a href="system.html">🖥️ System</a><a href="experimental.html">🧪 Experimental lab</a></nav>
+<div class="tools"><article class="tool" id="social.x_scraper">
+<header><h3><code>social x_scraper</code></h3><span class="badge free">Free</span></header>
+<p>X scraper (personal use only; respect the ToS)</p><p class="warn">⚠️ Personal use only; respect X&#x27;s Terms of Service. Never sold as a paid feature.</p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[scraper]&quot;</code></p>
+<p class="cli"><span class="k">CLI example</span><code>jiang social x_scraper login   # 僅限個人使用 / personal use only</code></p>
+</article><article class="tool" id="social.trend_radar">
+<header><h3><code>social trend_radar</code></h3><span class="badge pro">Pro</span></header>
+<p>Rising hashtags/keywords and best posting hours</p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[trends]&quot;</code></p>
+<p class="cli"><span class="k">CLI example</span><code>jiang social trend_radar posts.csv -o trend/</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/trend_radar.png" alt="Trend radar chart (synthetic data) — social.trend_radar" width="1320" height="440" loading="lazy" decoding="async"><figcaption>Trend radar chart (synthetic data)</figcaption></figure></div>
+</article><article class="tool" id="social.social">
+<header><h3><code>social social</code></h3><span class="badge free">Free</span></header>
+<p>Content calendar, hashtag groups, caption limits, UTM links, QR codes</p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[social]&quot;</code></p>
+<p class="cli"><span class="k">CLI example</span><code>jiang social social qr https://example.com/jiangkit -o social_qr.png</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/social_qr.png" alt="QR code output — social.social" width="370" height="370" loading="lazy" decoding="async"><figcaption>QR code output</figcaption></figure></div><pre class="term" tabindex="0" aria-label="Real output"><code>$ jiang social social check -t &#x27;今天的咖啡 ☕ 新作品上線！…&#x27; -p IG,X,Threads
+[OK ] IG           32/2200   tags 2/30  
+[OK ] X            47/280    tags 2/3  
+[BAD] Threads      32/500    tags 2/1  2 hashtags &gt; max 1
+</code></pre>
+</article></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<p>Free tier released under MIT; Pro modules are commercially licensed. Every demo output was produced by actually running the tools on public-domain / CC0 sample images or synthetic data.</p>
+<p class="muted">© 2026 JiangKit 匠具 · <a href="../security.html">Security</a> · <a href="https://github.com/Jinversedigital/jiangkit" rel="noopener">GitHub</a> · MIT / Commercial · No cookies, no analytics.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+$ jiang files files rename imgs/ -t 'cafe_{n:03d}' -g '*.jpg'   # dry-run
+astronaut.jpg  ->  cafe_001.jpg
+chelsea.jpg  ->  cafe_002.jpg
+coffee.jpg  ->  cafe_003.jpg
+rocket.jpg  ->  cafe_004.jpg
+
+[dry-run] 4 files would be renamed. Add --apply to do it.

@@ -1,0 +1,5 @@
+$ jiang experimental git_symphony --repo demo-repo
+commits: 14  authors: 1  duration: 3.5s  chords: 0
+  demo                     -> piano    (GM   0)  14 notes
+wrote /tmp/jk_demo/s.mid
+wrote /tmp/jk_demo/s.wav

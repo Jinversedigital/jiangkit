@@ -1,0 +1,211 @@
+{
+ "data": {
+  "search_by_raw_query": {
+   "search_timeline": {
+    "timeline": {
+     "instructions": [
+      {
+       "type": "TimelineAddEntries",
+       "entries": [
+        {
+         "entryId": "tweet-1830000000000000004",
+         "sortIndex": "1830000000000000004",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "Tweet",
+             "rest_id": "1830000000000000004",
+             "core": {
+              "user_results": {
+               "result": {
+                "__typename": "User",
+                "rest_id": "10152158",
+                "legacy": {
+                 "followers_count": 10
+                },
+                "core": {
+                 "screen_name": "comic_studio",
+                 "name": "短劇漫畫社"
+                }
+               }
+              }
+             },
+             "legacy": {
+              "id_str": "1830000000000000004",
+              "full_text": "第3話 更新 #短劇",
+              "created_at": "Wed Sep 23 12:00:00 +0000 2026",
+              "favorite_count": 2400,
+              "retweet_count": 310,
+              "reply_count": 77,
+              "quote_count": 1,
+              "bookmark_count": 2,
+              "lang": "zh",
+              "conversation_id_str": "1830000000000000004",
+              "entities": {
+               "hashtags": [
+                {
+                 "indices": [
+                  0,
+                  1
+                 ],
+                 "text": "短劇"
+                }
+               ],
+               "urls": [],
+               "user_mentions": [],
+               "media": [
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/CCC333.jpg",
+                 "id_str": "9"
+                }
+               ]
+              },
+              "extended_entities": {
+               "media": [
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/CCC333.jpg",
+                 "id_str": "9"
+                }
+               ]
+              }
+             },
+             "views": {
+              "count": "120000",
+              "state": "EnabledWithCount"
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet"
+          }
+         }
+        },
+        {
+         "entryId": "tweet-1830000000000000001",
+         "sortIndex": "1830000000000000001",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "Tweet",
+             "rest_id": "1830000000000000001",
+             "core": {
+              "user_results": {
+               "result": {
+                "__typename": "User",
+                "rest_id": "8956389",
+                "legacy": {
+                 "followers_count": 10
+                },
+                "core": {
+                 "screen_name": "ai_idol_mei",
+                 "name": "Mei 美"
+                }
+               }
+              }
+             },
+             "legacy": {
+              "id_str": "1830000000000000001",
+              "full_text": "#AI美女 新作品上線 ✨ #AIart",
+              "created_at": "Sun Sep 20 10:00:00 +0000 2026",
+              "favorite_count": 1520,
+              "retweet_count": 88,
+              "reply_count": 12,
+              "quote_count": 1,
+              "bookmark_count": 2,
+              "lang": "zh",
+              "conversation_id_str": "1830000000000000001",
+              "entities": {
+               "hashtags": [
+                {
+                 "indices": [
+                  0,
+                  1
+                 ],
+                 "text": "AI美女"
+                },
+                {
+                 "indices": [
+                  0,
+                  1
+                 ],
+                 "text": "AIart"
+                }
+               ],
+               "urls": [],
+               "user_mentions": [],
+               "media": [
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/AAA111.jpg",
+                 "id_str": "9"
+                }
+               ]
+              },
+              "extended_entities": {
+               "media": [
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/AAA111.jpg",
+                 "id_str": "9"
+                },
+                {
+                 "type": "photo",
+                 "media_url_https": "https://pbs.twimg.com/media/AAA222.png",
+                 "id_str": "9"
+                }
+               ]
+              }
+             },
+             "views": {
+              "count": "45210",
+              "state": "EnabledWithCount"
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet"
+          }
+         }
+        },
+        {
+         "entryId": "cursor-bottom-BOTTOM2",
+         "sortIndex": "0",
+         "content": {
+          "entryType": "TimelineTimelineCursor",
+          "__typename": "TimelineTimelineCursor",
+          "value": "BOTTOM2",
+          "cursorType": "Bottom"
+         }
+        }
+       ]
+      },
+      {
+       "type": "TimelineReplaceEntry",
+       "entry_id_to_replace": "cursor-top",
+       "entry": {
+        "entryId": "cursor-top-TOP2",
+        "sortIndex": "0",
+        "content": {
+         "entryType": "TimelineTimelineCursor",
+         "__typename": "TimelineTimelineCursor",
+         "value": "TOP2",
+         "cursorType": "Top"
+        }
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

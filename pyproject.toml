@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jiangkit"
+version = "1.0.0"
+description = "JiangKit 匠具 — creator & developer toolkit: media, social, docs, data, files, comic, web, AI, system and experimental tools behind one bilingual CLI + local web panel."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT; see LICENSE, LICENSE-DOCS-AGPL.md and THIRD_PARTY_LICENSES.md" }
+authors = [{ name = "正道" }]
+keywords = ["cli", "toolkit", "ffmpeg", "creator", "zh-TW", "gradio"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Natural Language :: Chinese (Traditional)",
+  "Natural Language :: English",
+]
+# Base install stays light: CLI, license verification, image + small tools.
+dependencies = [
+  "pillow>=12.3",
+  "requests>=2.34",
+  "beautifulsoup4>=4.13",
+  "cryptography>=46",
+  "psutil>=7.0",
+]
+
+[project.optional-dependencies]
+web = ["lxml>=6.0", "trafilatura>=2.0", "imagehash>=4.3"]
+scraper = ["playwright>=1.55"]
+data = ["pandas>=2.3", "openpyxl>=3.1", "defusedxml>=0.7.1", "matplotlib>=3.10"]  # defusedxml: openpyxl uses it automatically (XXE / billion-laughs protection)
+files = ["pyzipper>=0.3.6"]
+social = ["qrcode>=8.0"]
+text = ["opencc-python-reimplemented>=0.1.7"]
+# NOTE: PyMuPDF is AGPL-3.0. It is only used by the free, open-source doc_tools module
+# (which is itself AGPL-isolated, see LICENSE-DOCS-AGPL.md). Pro builds never include it.
+docs = ["pymupdf>=1.26", "pypdf>=6.0", "pytesseract>=0.3.13", "markdown>=3.8"]
+video = ["faster-whisper>=1.2"]
+experimental = ["numpy>=2.2", "matplotlib>=3.10", "mido>=1.3", "radon>=6.0"]
+media = ["numpy>=2.2", "opencv-python-headless>=4.12", "librosa>=0.11", "soundfile>=0.13"]
+ai = ["numpy>=2.2", "opencv-python-headless>=4.12", "open_clip_torch>=3.0", "torch>=2.8", "scikit-learn>=1.7"]
+brand = ["numpy>=2.2", "opencv-python-headless>=4.12", "scikit-learn>=1.7"]
+trends = ["pandas>=2.3", "numpy>=2.2", "matplotlib>=3.10"]
+panel = ["gradio>=6.0"]
+all = ["jiangkit[web,scraper,data,files,social,text,docs,video,experimental,media,ai,brand,trends,panel]"]
+dev = ["pytest>=9.0", "pip-audit>=2.9", "bandit>=1.8", "semgrep>=1.140"]
+
+[project.scripts]
+jiang = "jiangkit.cli:main"
+
+[project.urls]
+Homepage = "https://jinversedigital.github.io/jiangkit/"
+Source = "https://github.com/Jinversedigital/jiangkit"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jiangkit"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/jiangkit", "README.md", "LICENSE", "LICENSE-DOCS-AGPL.md", "THIRD_PARTY_LICENSES.md", "SECURITY_REPORT.md", "pyproject.toml"]
+exclude = ["**/*.pem", "**/*.key", "**/__pycache__/**"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -p no:cacheprovider"
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv"]

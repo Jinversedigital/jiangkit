@@ -1,0 +1,2 @@
+$ jiang experimental data_sonify sales.csv
+6 rows x 1 voices (sales), 1000 ms/row, 6.8s audio -> /tmp/jk_demo/son.wav

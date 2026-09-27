@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>AI vision · JiangKit</title>
+<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="../index.html"><span class="mark" aria-hidden="true">匠</span>JiangKit <span class="zh">匠具</span></a>
+<nav aria-label="primary"><a href="../index.html">Home</a><a href="../index.html#tools" aria-current="page">Tools</a><a href="../products.html">Products</a><a href="../security.html">Security</a><a href="../index.html#pricing">Free vs Pro</a></nav>
+<a class="lang" href="../../category/ai.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a>
+</div></header>
+<main id="main">
+<section class="wrap sec"><p class="crumbs"><a href="../index.html#tools">Tools</a> /</p>
+<h1>🧠 AI vision <span class="muted small">AI 視覺</span></h1>
+<nav class="catnav" aria-label="categories"><a href="media.html">🎬 Images &amp; video</a><a href="social.html">📣 Social</a><a href="docs.html">📄 Documents &amp; text</a><a href="data.html">📊 Tabular data</a><a href="files.html">📁 File management</a><a href="comic.html">🎞️ Comics &amp; storyboards</a><a href="web.html">🌐 Web &amp; brand</a><a href="ai.html" aria-current="page">🧠 AI vision</a><a href="system.html">🖥️ System</a><a href="experimental.html">🧪 Experimental lab</a></nav>
+<div class="tools"><article class="tool" id="ai.face_consistency">
+<header><h3><code>ai face_consistency</code></h3><span class="badge pro">Pro</span></header>
+<p>Character face-consistency scoring (YuNet + SFace)</p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[media]&quot;</code></p>
+<p class="cli"><span class="k">CLI example</span><code>jiang ai face_consistency --ref ref.jpg --images gen/ -o reports/face</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/face_report.png" alt="Face-consistency HTML report — ai.face_consistency" width="1200" height="800" loading="lazy" decoding="async"><figcaption>Face-consistency HTML report</figcaption></figure></div>
+</article><article class="tool" id="ai.auto_tagger">
+<header><h3><code>ai auto_tagger</code></h3><span class="badge pro">Pro</span></header>
+<p>Local CLIP tagging, sorting and text→image search</p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[ai]&quot;</code></p>
+<pre class="term" tabindex="0" aria-label="Real output"><code>$ jiang ai auto_tagger imgs/ --search &#x27;a cup of coffee&#x27;
+[model] open_clip:ViT-B-32/laion2b_s34b_b79k; 4 images; groups: [&#x27;shot&#x27;, &#x27;scene&#x27;, &#x27;style&#x27;, &#x27;subject&#x27;]
+[embed] 4/4 new images
+[search] &#x27;a cup of coffee&#x27;: coffee.jpg(0.311), chelsea.jpg(0.111), rocket.jpg(0.079), astronaut.jpg(0.075)
+[done] /tmp/jk_demo/tags/tags.csv
+</code></pre>
+</article></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<p>Free tier released under MIT; Pro modules are commercially licensed. Every demo output was produced by actually running the tools on public-domain / CC0 sample images or synthetic data.</p>
+<p class="muted">© 2026 JiangKit 匠具 · <a href="../security.html">Security</a> · <a href="https://github.com/Jinversedigital/jiangkit" rel="noopener">GitHub</a> · MIT / Commercial · No cookies, no analytics.</p>
+</div></footer>
+</body>
+</html>

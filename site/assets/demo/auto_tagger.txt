@@ -1,0 +1,5 @@
+$ jiang ai auto_tagger imgs/ --search 'a cup of coffee'
+[model] open_clip:ViT-B-32/laion2b_s34b_b79k; 4 images; groups: ['shot', 'scene', 'style', 'subject']
+[embed] 4/4 new images
+[search] 'a cup of coffee': coffee.jpg(0.311), chelsea.jpg(0.111), rocket.jpg(0.079), astronaut.jpg(0.075)
+[done] /tmp/jk_demo/tags/tags.csv

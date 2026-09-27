@@ -1,0 +1,26 @@
+$ jiang list
+media.img                        [Free]  批次圖片：IG/Reels/X 尺寸、浮水印、去 EXIF、轉檔、找重複 / Batch images: social sizes, watermark, EXIF strip, convert, find dupes
+media.video                      [Free]  ffmpeg 影片：剪輯、合併、9:16、抽幀、GIF、字幕、自動字幕 / ffmpeg video: trim, concat, 9:16, frames, GIF, subtitles, auto-subs
+media.beat_reels                 [Pro]   依音樂節拍自動剪直式 Reels / Beat-synced vertical Reels maker
+media.best_frame                 [Pro]   從影片挑最佳縮圖（清晰度/人臉/構圖） / Pick the best thumbnails from a video (sharpness/faces/composition)
+social.x_scraper                 [Free]  X 爬蟲（僅限個人使用，請遵守服務條款） / X scraper (personal use only; respect the ToS)
+social.trend_radar               [Pro]   上升中的主題標籤／關鍵字與最佳發文時段 / Rising hashtags/keywords and best posting hours
+social.social                    [Free]  內容行事曆、主題標籤組、貼文字數檢查、UTM 連結、QR code / Content calendar, hashtag groups, caption limits, UTM links, QR codes
+docs.doc                         [Free]  PDF 合併/分割/旋轉/壓縮/轉圖/OCR、Markdown/DOCX 轉 PDF（AGPL 隔離模組） / PDF merge/split/rotate/compress/render/OCR, Markdown/DOCX→PDF (AGPL-isolated)
+docs.text                        [Free]  中文文字與字幕：繁簡轉換、字幕平移/合併/轉檔、字數、批次取代 / Chinese text & subtitles: OpenCC, subtitle shift/merge/convert, counts, batch replace
+data.data                        [Free]  CSV/Excel/JSON 轉換、合併、去重、篩選、排序、統計、圖表 / CSV/Excel/JSON convert, merge, dedupe, filter, sort, stats, charts
+files.files                      [Free]  批次改名、依類型整理、找重複、容量報告、增量備份（可 AES 加密壓縮） / Batch rename, organise, dedupe, disk usage, incremental (AES-zip) backups
+comic.comic                      [Pro]   劇本轉分鏡表 CSV、可列印 HTML 分鏡、圖片拼成漫畫頁 / Script → shot list CSV, printable HTML storyboard, compose comic pages
+web.web                          [Free]  網頁擷取文字/連結/圖片、監看變化（SSRF 防護） / Extract text/links/images, watch pages (SSRF-protected)
+web.palette_brand                [Pro]   從截圖取色並產生品牌色票與 CSS/Tailwind / Palette → brand kit (CSS/Tailwind)
+ai.face_consistency              [Pro]   角色臉部一致性評分（YuNet + SFace） / Character face-consistency scoring (YuNet + SFace)
+ai.auto_tagger                   [Pro]   本機 CLIP 自動標籤、分類、以文搜圖 / Local CLIP tagging, sorting and text→image search
+system.sys                       [Free]  桌面通知、指令工作紀錄、連接埠與行程查詢 / Desktop notify, logged job runner, ports & processes
+experimental.git_symphony        [Free]  把 git 歷史變成音樂 / Turn git history into music
+experimental.shell_timemachine   [Free]  Shell 時光機：記錄指令並回答「我昨天在哪個資料夾做了什麼」 / Shell time machine: record and query your command history
+experimental.image_to_level      [Free]  照片變成可玩的終端機平台關卡 / Photo → playable terminal platformer level
+experimental.data_sonify         [Free]  用耳朵聽 CSV 資料 / Listen to a CSV
+experimental.code_weather        [Free]  程式碼庫天氣預報（變動、複雜度） / Weather forecast for a codebase
+experimental.entropy_clock       [Free]  系統越亂越凌亂的終端時鐘 / A clock that gets messier as your system does
+experimental.regex_from_examples [Free]  從正反例子自動合成正規表示式 / Synthesize a regex from examples
+experimental.dream_diff          [Free]  語意層級的文字差異比對（HTML 報告） / Semantic diff with an HTML report

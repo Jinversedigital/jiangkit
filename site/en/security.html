@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Security · JiangKit</title>
+<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="index.html"><span class="mark" aria-hidden="true">匠</span>JiangKit <span class="zh">匠具</span></a>
+<nav aria-label="primary"><a href="index.html">Home</a><a href="index.html#tools">Tools</a><a href="products.html">Products</a><a href="security.html" aria-current="page">Security</a><a href="index.html#pricing">Free vs Pro</a></nav>
+<a class="lang" href="../security.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a>
+</div></header>
+<main id="main">
+<section class="wrap sec"><h1>Security, actually done</h1>
+<p class="lead">The full report (Traditional Chinese) is SECURITY_REPORT.md in the source. Summary below.</p>
+<ul class="secl"><li><strong>🛡️ SSRF</strong><span>http(s) only; private/metadata IPs blocked; redirects and the actual socket peer re-checked (anti DNS-rebinding).</span></li><li><strong>🗜️ Zip-slip / 路徑</strong><span>Extraction rejects `..`, absolute paths, symlinks and zip bombs; filenames are sanitised.</span></li><li><strong>🎞️ ffmpeg</strong><span>Argument lists, no shell; URLs/protocols refused as inputs; filter values allow-listed.</span></li><li><strong>🧾 輸出</strong><span>HTML reports escaped + CSP; CSV/XLSX formula-injection guard; EXIF/GPS stripped on export.</span></li><li><strong>🔑 授權</strong><span>Ed25519 public-key verification, private keys never shipped; honest that client checks can be patched.</span></li><li><strong>📊 稽核</strong><span>pip-audit / npm audit: 0 known vulns; bandit &amp; semgrep findings resolved; gitleaks clean; 388 tests passing.</span></li></ul>
+<h2>Audit results</h2><div class="table-wrap"><table class="cmp"><tbody><tr><th scope="row">pip-audit</th><td>Suite venv (136 deps), subtitle-studio (36), 3 lock files: 0 known vulnerabilities</td></tr><tr><th scope="row">npm audit</th><td>mockup-studio, invoice-pro, linkinbio-builder, _qa: 0 vulnerabilities</td></tr><tr><th scope="row">bandit</th><td>Initially 3 high / 4 medium / 48 low → fixed or justified inline; final 0</td></tr><tr><th scope="row">semgrep</th><td>python / javascript / typescript / security-audit / secrets: 13 → 5 (all seller-only private keys, never in any public file or release)</td></tr><tr><th scope="row">gitleaks</th><td>No leaks in source; release archives scanned: 0 findings</td></tr><tr><th scope="row">pytest</th><td>388 tests passing (incl. security tests)</td></tr></tbody></table></div>
+<h2>Issues fixed (excerpt)</h2><ul class="fixes"><li>Old Gradio dashboard bound to 0.0.0.0 → new panel defaults to 127.0.0.1 and refuses public binds</li><li>Web products embedded the HMAC secret in JS (anyone could mint keys) → Ed25519 public-key verification</li><li>Subtitle Studio: stored XSS, CSRF / DNS rebinding, no CSP, unvalidated uploads → all fixed</li><li>Link-in-Bio: imported project JSON could inject CSS/HTML via &lt;style&gt; → colour &amp; image-source allow-lists</li><li>sys_tools: PowerShell notification command injection → parameterised and properly quoted</li><li>Shell time machine: unsalted SHA of secrets, leftover env files → keyed HMAC, 0600 permissions</li><li>Zip-slip, absolute members, zip bombs; format-string injection in batch rename</li><li>SSRF in web tools (incl. redirects &amp; DNS rebinding); ffmpeg argument and protocol injection</li><li>CSV/XLSX formula injection; HTML report escaping + CSP; EXIF stripped on image export</li><li>AI model downloads pinned to revisions, safetensors only; non-commercial InsightFace model removed</li></ul>
+<h2>Honest limits</h2>
+<p>Client-side licence checks (Ed25519 included) can still be patched out by a determined user; stronger protection needs online activation. The X scraper is for personal use only and users must respect the ToS.</p>
+</section>
+</main>
+<footer class="foot"><div class="wrap">
+<p>Free tier released under MIT; Pro modules are commercially licensed. Every demo output was produced by actually running the tools on public-domain / CC0 sample images or synthetic data.</p>
+<p class="muted">© 2026 JiangKit 匠具 · <a href="security.html">Security</a> · <a href="https://github.com/Jinversedigital/jiangkit" rel="noopener">GitHub</a> · MIT / Commercial · No cookies, no analytics.</p>
+</div></footer>
+</body>
+</html>

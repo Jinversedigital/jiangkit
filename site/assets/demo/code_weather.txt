@@ -1,0 +1,16 @@
+$ jiang experimental code_weather demo-repo
+CODE WEATHER for /tmp/jk_demo/repo  (churn window 90 days)
+
++----------------------------------------------------------------------+
+|''''''''''''''''''''''''''''''' (root) '''''''''''''''''''''''''''''''|
+|'''''''''''''''''''''''''''''''' Rain ''''''''''''''''''''''''''''''''|
+|''''''''''''''''''''''''''''' risk 0.53 ''''''''''''''''''''''''''''''|
++----------------------------------------------------------------------+
+[/\] Thunderstorms  [''] Rain  [==] Overcast  [..] Fog  [o-] Partly cloudy  [  ] Sunny
+
+🌧 Rain          over (root)               (26°C, churn 688 lines, max complexity 1, 334 TODOs, 0% covered by tests)
+    eye of the storm: mod0.py (worst: f0) - changes are landing on fragile ground: review carefully
+
+Outlook: carry an umbrella in (root).
+
+HTML report -> /tmp/jk_demo/reports/code_weather.html

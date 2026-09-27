@@ -1,0 +1,336 @@
+{
+ "data": {
+  "user": {
+   "result": {
+    "__typename": "User",
+    "timeline": {
+     "timeline": {
+      "instructions": [
+       {
+        "type": "TimelinePinEntry",
+        "entry": {
+         "entryId": "tweet-1820000000000000010",
+         "sortIndex": "1820000000000000010",
+         "content": {
+          "entryType": "TimelineTimelineItem",
+          "__typename": "TimelineTimelineItem",
+          "itemContent": {
+           "itemType": "TimelineTweet",
+           "__typename": "TimelineTweet",
+           "tweet_results": {
+            "result": {
+             "__typename": "Tweet",
+             "rest_id": "1820000000000000010",
+             "core": {
+              "user_results": {
+               "result": {
+                "__typename": "User",
+                "rest_id": "8956389",
+                "legacy": {
+                 "followers_count": 10
+                },
+                "core": {
+                 "screen_name": "ai_idol_mei",
+                 "name": "Mei 美"
+                }
+               }
+              }
+             },
+             "legacy": {
+              "id_str": "1820000000000000010",
+              "full_text": "置頂：作品集連結",
+              "created_at": "Fri Aug 01 00:00:00 +0000 2026",
+              "favorite_count": 5000,
+              "retweet_count": 0,
+              "reply_count": 0,
+              "quote_count": 1,
+              "bookmark_count": 2,
+              "lang": "zh",
+              "conversation_id_str": "1820000000000000010",
+              "entities": {
+               "hashtags": [],
+               "urls": [],
+               "user_mentions": []
+              }
+             },
+             "views": {
+              "count": "300000",
+              "state": "EnabledWithCount"
+             }
+            }
+           },
+           "tweetDisplayType": "Tweet"
+          }
+         }
+        }
+       },
+       {
+        "type": "TimelineAddEntries",
+        "entries": [
+         {
+          "entryId": "tweet-1830000000000000011",
+          "sortIndex": "1830000000000000011",
+          "content": {
+           "entryType": "TimelineTimelineItem",
+           "__typename": "TimelineTimelineItem",
+           "itemContent": {
+            "itemType": "TimelineTweet",
+            "__typename": "TimelineTweet",
+            "tweet_results": {
+             "result": {
+              "__typename": "Tweet",
+              "rest_id": "1830000000000000011",
+              "core": {
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "8956389",
+                 "legacy": {
+                  "followers_count": 10
+                 },
+                 "core": {
+                  "screen_name": "ai_idol_mei",
+                  "name": "Mei 美"
+                 }
+                }
+               }
+              },
+              "legacy": {
+               "id_str": "1830000000000000011",
+               "full_text": "今天的穿搭 #OOTD",
+               "created_at": "Thu Sep 24 09:00:00 +0000 2026",
+               "favorite_count": 900,
+               "retweet_count": 40,
+               "reply_count": 30,
+               "quote_count": 1,
+               "bookmark_count": 2,
+               "lang": "zh",
+               "conversation_id_str": "1830000000000000011",
+               "entities": {
+                "hashtags": [
+                 {
+                  "indices": [
+                   0,
+                   1
+                  ],
+                  "text": "OOTD"
+                 }
+                ],
+                "urls": [],
+                "user_mentions": [],
+                "media": [
+                 {
+                  "type": "photo",
+                  "media_url_https": "https://pbs.twimg.com/media/DDD444.jpg",
+                  "id_str": "9"
+                 }
+                ]
+               },
+               "extended_entities": {
+                "media": [
+                 {
+                  "type": "photo",
+                  "media_url_https": "https://pbs.twimg.com/media/DDD444.jpg",
+                  "id_str": "9"
+                 }
+                ]
+               }
+              },
+              "views": {
+               "count": "21000",
+               "state": "EnabledWithCount"
+              }
+             }
+            },
+            "tweetDisplayType": "Tweet"
+           }
+          }
+         },
+         {
+          "entryId": "tweet-1830000000000000012",
+          "sortIndex": "1830000000000000012",
+          "content": {
+           "entryType": "TimelineTimelineItem",
+           "__typename": "TimelineTimelineItem",
+           "itemContent": {
+            "itemType": "TimelineTweet",
+            "__typename": "TimelineTweet",
+            "tweet_results": {
+             "result": {
+              "__typename": "Tweet",
+              "rest_id": "1830000000000000012",
+              "core": {
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "8956389",
+                 "legacy": {
+                  "followers_count": 10
+                 },
+                 "core": {
+                  "screen_name": "ai_idol_mei",
+                  "name": "Mei 美"
+                 }
+                }
+               }
+              },
+              "legacy": {
+               "id_str": "1830000000000000012",
+               "full_text": "RT @comic_studio: 第3話 更新 #短劇",
+               "created_at": "Thu Sep 24 10:00:00 +0000 2026",
+               "favorite_count": 0,
+               "retweet_count": 310,
+               "reply_count": 0,
+               "quote_count": 1,
+               "bookmark_count": 2,
+               "lang": "zh",
+               "conversation_id_str": "1830000000000000012",
+               "entities": {
+                "hashtags": [],
+                "urls": [],
+                "user_mentions": []
+               },
+               "retweeted_status_result": {
+                "result": {
+                 "__typename": "Tweet",
+                 "rest_id": "1830000000000000004",
+                 "core": {
+                  "user_results": {
+                   "result": {
+                    "__typename": "User",
+                    "rest_id": "10152158",
+                    "legacy": {
+                     "followers_count": 10
+                    },
+                    "core": {
+                     "screen_name": "comic_studio",
+                     "name": "短劇漫畫社"
+                    }
+                   }
+                  }
+                 },
+                 "legacy": {
+                  "id_str": "1830000000000000004",
+                  "full_text": "第3話 更新 #短劇",
+                  "created_at": "Wed Sep 23 12:00:00 +0000 2026",
+                  "favorite_count": 2400,
+                  "retweet_count": 310,
+                  "reply_count": 77,
+                  "quote_count": 1,
+                  "bookmark_count": 2,
+                  "lang": "zh",
+                  "conversation_id_str": "1830000000000000004",
+                  "entities": {
+                   "hashtags": [
+                    {
+                     "indices": [
+                      0,
+                      1
+                     ],
+                     "text": "短劇"
+                    }
+                   ],
+                   "urls": [],
+                   "user_mentions": [],
+                   "media": [
+                    {
+                     "type": "photo",
+                     "media_url_https": "https://pbs.twimg.com/media/CCC333.jpg",
+                     "id_str": "9"
+                    }
+                   ]
+                  },
+                  "extended_entities": {
+                   "media": [
+                    {
+                     "type": "photo",
+                     "media_url_https": "https://pbs.twimg.com/media/CCC333.jpg",
+                     "id_str": "9"
+                    }
+                   ]
+                  }
+                 },
+                 "views": {
+                  "count": "120000",
+                  "state": "EnabledWithCount"
+                 }
+                }
+               }
+              },
+              "views": {
+               "count": "0",
+               "state": "EnabledWithCount"
+              }
+             }
+            },
+            "tweetDisplayType": "Tweet"
+           }
+          }
+         },
+         {
+          "entryId": "tweet-404",
+          "content": {
+           "entryType": "TimelineTimelineItem",
+           "itemContent": {
+            "itemType": "TimelineTweet",
+            "tweet_results": {
+             "result": {
+              "__typename": "TweetTombstone",
+              "tombstone": {
+               "text": {
+                "text": "deleted"
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "entryId": "who-to-follow-1",
+          "content": {
+           "entryType": "TimelineTimelineModule",
+           "items": [
+            {
+             "entryId": "who-to-follow-1-user-1",
+             "item": {
+              "itemContent": {
+               "itemType": "TimelineUser",
+               "user_results": {
+                "result": {
+                 "__typename": "User",
+                 "rest_id": "6002602",
+                 "legacy": {
+                  "followers_count": 10
+                 },
+                 "core": {
+                  "screen_name": "someone",
+                  "name": "S"
+                 }
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "entryId": "cursor-bottom-UBOTTOM",
+          "sortIndex": "0",
+          "content": {
+           "entryType": "TimelineTimelineCursor",
+           "__typename": "TimelineTimelineCursor",
+           "value": "UBOTTOM",
+           "cursorType": "Bottom"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}
