@@ -169,7 +169,7 @@ def test_web_cli_exit_code_for_blocked_url():
     import subprocess
     import sys
     r = subprocess.run([sys.executable, "-m", "jiangkit", "web", "web", "fetch", "http://127.0.0.1:1/"],
-                       capture_output=True, text=True, env={**__import__("os").environ, "JIANGKIT_ALLOW_PRIVATE_NET": ""})
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", env={**__import__("os").environ, "JIANGKIT_ALLOW_PRIVATE_NET": ""})
     assert r.returncode == 5, r.stderr
 
 

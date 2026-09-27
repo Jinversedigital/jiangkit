@@ -72,15 +72,15 @@ def test_cli(tmp_path):
     pf = tmp_path / "pos.txt"
     pf.write_text("A-1\nB-22\n")
     r = subprocess.run([sys.executable, str(ROOT / "regex_from_examples.py"), "--pos-file", str(pf),
-                        "-n", "a-1", "-n", "AB-1"], capture_output=True, text=True)
+                        "-n", "a-1", "-n", "AB-1"], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0, r.stdout + r.stderr
     assert "accuracy          : 100.0%" in r.stdout and "依序符合" in r.stdout
     r = subprocess.run([sys.executable, str(ROOT / "regex_from_examples.py"), "--explain", r"a+b?"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert "一個或多個" in r.stdout and "可有可無" in r.stdout
 
 
 def test_help():
     r = subprocess.run([sys.executable, str(ROOT / "regex_from_examples.py"), "--help"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "Traditional Chinese" in r.stdout

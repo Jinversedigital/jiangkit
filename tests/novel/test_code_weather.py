@@ -71,11 +71,11 @@ def test_ascii_map_shape(repo):
 def test_cli_and_html(repo, tmp_path):
     out = tmp_path / "r.html"
     r = subprocess.run([sys.executable, str(ROOT / "code_weather.py"), str(repo), "--html", str(out),
-                        "--ascii"], capture_output=True, text=True)
+                        "--ascii"], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0, r.stderr
     assert "Thunderstorms" in r.stdout and "umbrella" in r.stdout
     assert r.stdout.isascii()
-    h = out.read_text()
+    h = out.read_text(encoding="utf-8")
     assert h.startswith("<!doctype html>") and "stormy/engine.py" in h and "⛈" in h
 
 
@@ -87,5 +87,5 @@ def test_no_git_directory(tmp_path):
 
 def test_help():
     r = subprocess.run([sys.executable, str(ROOT / "code_weather.py"), "--help"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "weather forecast" in r.stdout

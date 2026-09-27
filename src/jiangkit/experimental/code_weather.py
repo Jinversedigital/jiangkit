@@ -136,7 +136,7 @@ def complexity(path: Path, text: str) -> tuple[float, float, str]:
 def scan(root: Path, days: int = 90, depth: int = 1) -> list[FileStats]:
     root = root.resolve()
     files = list_sources(root)
-    rels = [str(p.relative_to(root)) for p in files]
+    rels = [p.relative_to(root).as_posix() for p in files]
     stats = {r: FileStats(path=r, module=module_of(r, depth), is_test=is_test_file(r)) for r in rels}
     # churn and commit counts from git
     log = git(root, "log", f"--since={days}.days", "--numstat", "--format=format:@@@")

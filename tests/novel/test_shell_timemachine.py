@@ -19,7 +19,7 @@ from jiangkit.experimental.shell_timemachine import shell_timemachine as tm  # n
 def run_tm(tm_home, *args, cwd=None, env_extra=None):
     env = dict(os.environ, TM_HOME=str(tm_home), **(env_extra or {}))
     return subprocess.run([sys.executable, str(SCRIPT), *args], capture_output=True,
-                          text=True, cwd=cwd, env=env)
+                          text=True, encoding="utf-8", errors="replace", cwd=cwd, env=env)
 
 
 def wait_rows(db_path, n, timeout=10):
@@ -38,7 +38,7 @@ def wait_rows(db_path, n, timeout=10):
 
 
 def test_help():
-    r = subprocess.run([sys.executable, str(SCRIPT), "--help"], capture_output=True, text=True)
+    r = subprocess.run([sys.executable, str(SCRIPT), "--help"], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "last worked" in r.stdout
 
 
@@ -131,7 +131,7 @@ def test_bash_hook_integration(tmp_path):
     rc.write_text(run_tm(home, "hook", "bash").stdout)
     env = dict(os.environ, TM_HOME=str(home), HOME=str(tmp_path))
     subprocess.run(["bash", "--rcfile", str(rc), "-i"], input=SESSION.format(proj=proj),
-                   text=True, capture_output=True, env=env, timeout=30)
+                   text=True, encoding="utf-8", errors="replace", capture_output=True, env=env, timeout=30)
     _check_session(home)
 
 
@@ -148,5 +148,5 @@ def test_zsh_hook_integration(tmp_path):
     rc.write_text(run_tm(home, "hook", "zsh").stdout)
     env = dict(os.environ, TM_HOME=str(home), HOME=str(tmp_path))
     subprocess.run([_find_zsh(), "-f", "-i"], input=f"source {rc}\n" + SESSION.format(proj=proj),
-                   text=True, capture_output=True, env=env, timeout=30)
+                   text=True, encoding="utf-8", errors="replace", capture_output=True, env=env, timeout=30)
     _check_session(home)

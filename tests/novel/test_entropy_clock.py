@@ -69,21 +69,21 @@ def test_process_churn_detected():
 
 def test_cli_once():
     r = subprocess.run([sys.executable, str(ROOT / "entropy_clock.py"), "--once", "--seed", "3",
-                        "--no-color"], capture_output=True, text=True)
+                        "--no-color"], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0
     assert "entropy [" in r.stdout and "procs" in r.stdout and "\x1b[" not in r.stdout
     r2 = subprocess.run([sys.executable, str(ROOT / "entropy_clock.py"), "--once", "--mess", "1",
-                         "--seed", "3"], capture_output=True, text=True)
+                         "--seed", "3"], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert "meltdown" in r2.stdout
 
 
 def test_loop_frames():
     r = subprocess.run([sys.executable, str(ROOT / "entropy_clock.py"), "--frames", "2",
-                        "--interval", "0.05", "--no-color"], capture_output=True, text=True, timeout=20)
+                        "--interval", "0.05", "--no-color"], capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=20)
     assert r.returncode == 0 and r.stdout.count("entropy [") == 2
 
 
 def test_help():
     r = subprocess.run([sys.executable, str(ROOT / "entropy_clock.py"), "--help"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "--once" in r.stdout

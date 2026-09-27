@@ -88,18 +88,18 @@ def test_cli_json_and_html(tmp_path):
     fa.write_text(CONTRACT_A)
     fb.write_text(CONTRACT_B)
     r = subprocess.run([sys.executable, str(ROOT / "dream_diff.py"), str(fa), str(fb), "--json",
-                        "--html", str(out)], capture_output=True, text=True)
+                        "--html", str(out)], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0, r.stderr
     data = json.loads(r.stdout)
     assert "numbers" in data["summary"]["groups"]
     h = out.read_text()
     assert "<del>" in h and "<ins>" in h and "Obligation shifted" in h
     r = subprocess.run([sys.executable, str(ROOT / "dream_diff.py"), str(fa), str(fb)],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert "== Numbers changed" in r.stdout
 
 
 def test_help():
     r = subprocess.run([sys.executable, str(ROOT / "dream_diff.py"), "--help"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "semantic diff" in r.stdout.lower()

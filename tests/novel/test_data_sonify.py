@@ -63,14 +63,14 @@ def test_cli_wav_and_synced_video(tmp_path):
     csvp = make_csv(tmp_path / "d.csv")
     wav, mp4 = tmp_path / "o.wav", tmp_path / "o.mp4"
     r = subprocess.run([sys.executable, str(ROOT / "data_sonify.py"), str(csvp), "--wav", str(wav),
-                        "--video", str(mp4), "--duration", "6"], capture_output=True, text=True)
+                        "--video", str(mp4), "--duration", "6"], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0, r.stderr
     assert r.stdout.count("ALERT") == 2
     with wave.open(str(wav)) as w:
         assert w.getnchannels() == 2
         dur = w.getnframes() / w.getframerate()
     probe = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                            "-of", "csv=p=0", str(mp4)], capture_output=True, text=True)
+                            "-of", "csv=p=0", str(mp4)], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert abs(float(probe.stdout.strip()) - dur) < 0.3
     # the red playhead must move to the right over time
     xs = []
@@ -86,5 +86,5 @@ def test_cli_wav_and_synced_video(tmp_path):
 
 def test_help():
     r = subprocess.run([sys.executable, str(ROOT / "data_sonify.py"), "--help"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "anomalies" in r.stdout

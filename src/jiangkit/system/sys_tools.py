@@ -351,6 +351,15 @@ def find_procs(pattern, name_only=False):
     return found
 
 
+def _still_alive(p) -> bool:
+    """True while p runs; a process that exits mid-check (common on Windows) counts as gone."""
+    import psutil
+    try:
+        return p.is_running() and p.status() != psutil.STATUS_ZOMBIE
+    except psutil.Error:
+        return False
+
+
 def cmd_proc(a):
     import psutil
     procs = find_procs(a.pattern, a.name_only)
@@ -383,7 +392,7 @@ def cmd_proc(a):
         deadline = time.time() + 5
         alive = list(procs)
         while alive and time.time() < deadline:
-            alive = [p for p in alive if p.is_running() and p.status() != psutil.STATUS_ZOMBIE]
+            alive = [p for p in alive if _still_alive(p)]
             time.sleep(0.1)
         for p in alive:
             try:

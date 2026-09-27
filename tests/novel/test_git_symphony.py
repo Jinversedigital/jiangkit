@@ -72,5 +72,5 @@ def test_cli_outputs(repo, tmp_path, capsys):
 
 def test_help():
     out = subprocess.run([sys.executable, str(Path(gs.__file__)), "--help"],
-                         capture_output=True, text=True)
+                         capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert out.returncode == 0 and "commit history" in out.stdout

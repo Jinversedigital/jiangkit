@@ -24,7 +24,7 @@ def cli(tmp_path, monkeypatch):
         script = str(PKG / TOOLS[tool] / f"{tool}.py")
         argv = [sys.executable, script]
         res = subprocess.run([*argv, *map(str, args)],
-                             capture_output=True, text=True, cwd=tmp_path, env=e, input=input)
+                             capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=tmp_path, env=e, input=input)
         if check and res.returncode != 0:
             raise AssertionError(f"{tool} {args} failed ({res.returncode}):\n"
                                  f"{res.stdout}\n{res.stderr}")

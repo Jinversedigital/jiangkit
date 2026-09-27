@@ -102,7 +102,7 @@ def test_cli_headless_and_save(tmp_path):
     photo = make_photo(tmp_path / "p.png")
     out = tmp_path / "level.txt"
     r = subprocess.run([sys.executable, str(ROOT / "image_to_level.py"), str(photo),
-                        "--headless", "--save", str(out)], capture_output=True, text=True)
+                        "--headless", "--save", str(out)], capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0, r.stdout + r.stderr
     assert "SOLVED" in r.stdout
     assert out.read_text().count("\n") == 22
@@ -110,7 +110,7 @@ def test_cli_headless_and_save(tmp_path):
 
 def test_help():
     r = subprocess.run([sys.executable, str(ROOT / "image_to_level.py"), "--help"],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode == 0 and "platformer" in r.stdout
 
 
