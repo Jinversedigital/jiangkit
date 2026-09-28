@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Images &amp; video · JiangKit</title>
-<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<meta name="description" content="Images &amp; video tools: Batch images (social sizes, watermarks, EXIF strip), ffmpeg video editing and subtitles, plus Pro beat-synced Reels and best-frame picker.">
 <link rel="stylesheet" href="../../assets/style.css">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/en/category/media.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/category/media.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/category/media.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/category/media.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="Images &amp; video · JiangKit 匠具">
+<meta property="og:description" content="Images &amp; video tools: Batch images (social sizes, watermarks, EXIF strip), ffmpeg video editing and subtitles, plus Pro beat-synced Reels and best-frame picker.">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/en/category/media.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Images &amp; video · JiangKit 匠具">
+<meta name="twitter:description" content="Images &amp; video tools: Batch images (social sizes, watermarks, EXIF strip), ffmpeg video editing and subtitles, plus Pro beat-synced Reels and best-frame picker.">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -24,22 +45,22 @@
 <div class="tools"><article class="tool" id="media.img">
 <header><h3><code>media img</code></h3><span class="badge free">Free</span></header>
 <p>Batch images: social sizes, watermark, EXIF strip, convert, find dupes</p>
-<p class="extra"><span class="k">Install</span><code>pip install jiangkit  (base install)</code></p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;git+https://github.com/Jinversedigital/jiangkit&quot;  (base install)</code></p>
 <p class="cli"><span class="k">CLI example</span><code>jiang media img fit coffee.jpg -p ig-portrait -o img_fit/ &amp;&amp; jiang media img watermark img_fit/coffee.jpg --text &#x27;© 匠具 JiangKit&#x27; --opacity 0.7</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/img_input.jpg" alt="Input (public-domain scikit-image sample) — media.img" width="600" height="400" loading="lazy" decoding="async"><figcaption>Input (public-domain scikit-image sample)</figcaption></figure><figure class="shot"><img src="../../assets/demo/img_fit_watermark.jpg" alt="Output: IG portrait 4:5 + watermark, EXIF stripped — media.img" width="1080" height="1350" loading="lazy" decoding="async"><figcaption>Output: IG portrait 4:5 + watermark, EXIF stripped</figcaption></figure></div>
 </article><article class="tool" id="media.video">
 <header><h3><code>media video</code></h3><span class="badge free">Free</span></header>
 <p>ffmpeg video: trim, concat, 9:16, frames, GIF, subtitles, auto-subs</p>
-<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[video]&quot;</code></p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[video] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <p class="cli"><span class="k">CLI example</span><code>jiang media video vertical clip.mp4 --size 540x960 -o vertical.mp4</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/video_vertical.jpg" alt="Frames from the 9:16 output — media.video" width="738" height="320" loading="lazy" decoding="async"><figcaption>Frames from the 9:16 output</figcaption></figure></div>
 </article><article class="tool" id="media.beat_reels">
 <header><h3><code>media beat_reels</code></h3><span class="badge pro">Pro</span></header>
 <p>Beat-synced vertical Reels maker</p>
-<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[media]&quot;</code></p>
+<p class="extra"><span class="k">Install</span><code>JiangKit Pro (coming soon)</code></p>
 <p class="cli"><span class="k">CLI example</span><code>jiang media beat_reels --music beat.wav --media imgs/ --size 540x960 --texts &#x27;咖啡日常|Coffee time|太空漫步|Launch!&#x27; --fit blur</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/beat_reels.jpg" alt="Beat-synced Reel frames — media.beat_reels" width="738" height="320" loading="lazy" decoding="async"><figcaption>Beat-synced Reel frames</figcaption></figure></div>
 </article><article class="tool" id="media.best_frame">
 <header><h3><code>media best_frame</code></h3><span class="badge pro">Pro</span></header>
 <p>Pick the best thumbnails from a video (sharpness/faces/composition)</p>
-<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[media]&quot;</code></p>
+<p class="extra"><span class="k">Install</span><code>JiangKit Pro (coming soon)</code></p>
 <p class="cli"><span class="k">CLI example</span><code>jiang media best_frame video.mp4 -n 4 --samples 40</code></p><div class="shots"><figure class="shot"><img src="../../assets/demo/best_frame.jpg" alt="Auto-picked best thumbnails — media.best_frame" width="1480" height="410" loading="lazy" decoding="async"><figcaption>Auto-picked best thumbnails</figcaption></figure></div>
 </article></div></section>
 </main>

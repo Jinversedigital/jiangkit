@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>JiangKit 匠具</title>
-<meta name="description" content="創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。">
+<meta name="description" content="一個指令、一個面板、資料不出門：開源免費版 18 個工具，涵蓋影像、影片、文件、資料、檔案、網頁、系統與實驗室。">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="JiangKit 匠具 — 創作者與開發者的本機工具箱">
+<meta property="og:description" content="一個指令、一個面板、資料不出門：開源免費版 18 個工具，涵蓋影像、影片、文件、資料、檔案、網頁、系統與實驗室。">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JiangKit 匠具 — 創作者與開發者的本機工具箱">
+<meta name="twitter:description" content="一個指令、一個面板、資料不出門：開源免費版 18 個工具，涵蓋影像、影片、文件、資料、檔案、網頁、系統與實驗室。">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -21,8 +42,8 @@
 <section class="hero"><div class="wrap hero-grid"><div>
 <p class="eyebrow">JiangKit 匠具 · v1.0</p>
 <h1>創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。</h1>
-<p class="lead">25 個工具、10 大類，全部在你的電腦上執行。</p>
-<pre class="term hero-term" aria-label="install"><code>$ pip install "jiangkit[all]"
+<p class="lead">開源免費版 18 個工具（另有 7 個 Pro 工具）、10 大類，全部在你的電腦上執行。</p>
+<pre class="term hero-term" aria-label="install"><code>$ pip install "git+https://github.com/Jinversedigital/jiangkit"
 $ jiang list
 $ jiang media img fit photo.jpg -p ig-portrait
 $ jiang panel          # http://127.0.0.1:7860</code></pre>
@@ -36,7 +57,7 @@ $ jiang panel          # http://127.0.0.1:7860</code></pre>
 <span class="name">影像與影片</span><span class="sub">Images &amp; video</span>
 <span class="meta">4 個工具 · 2 Pro</span></a><a class="cat" href="category/social.html"><span class="ico" aria-hidden="true">📣</span>
 <span class="name">社群</span><span class="sub">Social</span>
-<span class="meta">3 個工具 · 1 Pro</span></a><a class="cat" href="category/docs.html"><span class="ico" aria-hidden="true">📄</span>
+<span class="meta">2 個工具 · 1 Pro</span></a><a class="cat" href="category/docs.html"><span class="ico" aria-hidden="true">📄</span>
 <span class="name">文件與文字</span><span class="sub">Documents &amp; text</span>
 <span class="meta">2 個工具</span></a><a class="cat" href="category/data.html"><span class="ico" aria-hidden="true">📊</span>
 <span class="name">資料表</span><span class="sub">Tabular data</span>
@@ -59,15 +80,15 @@ $ jiang panel          # http://127.0.0.1:7860</code></pre>
 <figcaption><code>experimental dream_diff</code> <span class="badge free">免費</span><br>語意層級的文字差異比對（HTML 報告）</figcaption></figure></div></section>
 <section class="wrap sec split"><div><h2>本機網頁面板</h2><p>只綁定 127.0.0.1、上傳大小限制、輸出 6 小時自動清除。Pro 分頁需授權。</p></div>
 <figure class="shot big"><img src="assets/demo/panel_media.png" alt="本機網頁面板" width="1200" height="800" loading="lazy" decoding="async"></figure></section>
-<section class="wrap sec"><h2>四個可販售的網頁產品</h2><p class="muted">純前端或本機執行，資料不出門。每個都附商店文案、定價建議、EULA 範本與截圖。</p><div class="prods"><article class="prod"><a href="products.html#mockup-studio"><img src="assets/products/mockup-studio/01-editor-iphone-zh.webp" alt="Mockup Studio" width="1600" height="1000" loading="lazy" decoding="async"></a>
-<div class="pbody"><h3>Mockup Studio</h3><p>3 秒做出專業裝置樣機圖；App Store / Google Play 截圖批次輸出。</p><p class="muted">建議售價: US$19–39</p></div></article><article class="prod"><a href="products.html#invoice-pro"><img src="assets/products/invoice-pro/01-documents-zh.webp" alt="Invoice Pro" width="1600" height="1000" loading="lazy" decoding="async"></a>
-<div class="pbody"><h3>Invoice Pro</h3><p>不用註冊、資料不上雲的請款單與報價單；營業稅、多幣別、一鍵 PDF。</p><p class="muted">建議售價: US$15–29</p></div></article><article class="prod"><a href="products.html#linkinbio-builder"><img src="assets/products/linkinbio-builder/01-editor-content-zh.webp" alt="Link-in-Bio Builder" width="1600" height="1000" loading="lazy" decoding="async"></a>
-<div class="pbody"><h3>Link-in-Bio Builder</h3><p>做一個屬於自己的連結頁，匯出單一 HTML 檔，免月費、無追蹤碼。</p><p class="muted">建議售價: US$12–24</p></div></article><article class="prod"><a href="products.html#subtitle-studio"><img src="assets/products/subtitle-studio/01-welcome-zh.webp" alt="Subtitle Studio" width="1440" height="900" loading="lazy" decoding="async"></a>
-<div class="pbody"><h3>Subtitle Studio</h3><p>離線 AI 字幕：Whisper 本機聽寫、時間軸編輯、匯出 SRT 或燒錄。</p><p class="muted">建議售價: US$24–45</p></div></article></div></section>
+<section class="wrap sec"><h2>四個網頁產品（即將推出）</h2><p class="muted">純前端或本機執行，資料不出門。目前尚未開放購買；以下為開發中產品的預覽與建議售價。</p><div class="prods"><article class="prod"><a href="products.html#mockup-studio"><img src="assets/products/mockup-studio/01-editor-iphone-zh.webp" alt="Mockup Studio" width="1600" height="1000" loading="lazy" decoding="async"></a>
+<div class="pbody"><h3>Mockup Studio</h3><p>3 秒做出專業裝置樣機圖；App Store / Google Play 截圖批次輸出。</p><p class="muted">即將推出 · 建議售價：US$19–39</p></div></article><article class="prod"><a href="products.html#invoice-pro"><img src="assets/products/invoice-pro/01-documents-zh.webp" alt="Invoice Pro" width="1600" height="1000" loading="lazy" decoding="async"></a>
+<div class="pbody"><h3>Invoice Pro</h3><p>不用註冊、資料不上雲的請款單與報價單；營業稅、多幣別、一鍵 PDF。</p><p class="muted">即將推出 · 建議售價：US$15–29</p></div></article><article class="prod"><a href="products.html#linkinbio-builder"><img src="assets/products/linkinbio-builder/01-editor-content-zh.webp" alt="Link-in-Bio Builder" width="1600" height="1000" loading="lazy" decoding="async"></a>
+<div class="pbody"><h3>Link-in-Bio Builder</h3><p>做一個屬於自己的連結頁，匯出單一 HTML 檔，免月費、無追蹤碼。</p><p class="muted">即將推出 · 建議售價：US$12–24</p></div></article><article class="prod"><a href="products.html#subtitle-studio"><img src="assets/products/subtitle-studio/01-welcome-zh.webp" alt="Subtitle Studio" width="1440" height="900" loading="lazy" decoding="async"></a>
+<div class="pbody"><h3>Subtitle Studio</h3><p>離線 AI 字幕：Whisper 本機聽寫、時間軸編輯、匯出 SRT 或燒錄。</p><p class="muted">即將推出 · 建議售價：US$24–45</p></div></article></div></section>
 <section class="wrap sec"><h2>安全，是真的做了</h2><ul class="secl"><li><strong>🛡️ SSRF</strong><span>只允許 http(s)、封鎖內網／metadata IP，轉址與實際連線都再檢查一次（防 DNS rebinding）。</span></li><li><strong>🗜️ Zip-slip / 路徑</strong><span>解壓縮拒絕 `..`、絕對路徑、符號連結與 zip bomb；檔名一律安全化。</span></li><li><strong>🎞️ ffmpeg</strong><span>參數陣列、不經 shell；拒絕 URL/協定當輸入；濾鏡值白名單驗證。</span></li><li><strong>🧾 輸出</strong><span>HTML 報告全面跳脫＋CSP；CSV/XLSX 公式注入防護；匯出圖片預設移除 EXIF/GPS。</span></li><li><strong>🔑 授權</strong><span>Ed25519 公鑰驗證，私鑰永不隨產品散布；誠實標示用戶端檢查仍可被修改。</span></li><li><strong>📊 稽核</strong><span>pip-audit / npm audit：0 個已知漏洞；bandit、semgrep 全數處理；gitleaks 無外洩；388 個測試全數通過。</span></li></ul><p><a class="btn" href="security.html">閱讀完整安全報告 →</a></p></section>
 <section id="pricing" class="wrap sec"><h2>免費 vs Pro</h2><div class="table-wrap"><table class="cmp"><caption class="sr">免費 vs Pro</caption>
-<thead><tr><th scope="col">項目</th><th scope="col">免費（MIT）</th><th scope="col">Pro（授權碼）</th></tr></thead>
-<tbody><tr><th scope="row">CLI `jiang` + 本機面板</th><td>✔</td><td>✔</td></tr><tr><th scope="row">影像、影片、文件、資料、檔案、網頁、系統工具</th><td>✔</td><td>✔</td></tr><tr><th scope="row">8 個實驗室作品（git 音樂、Shell 時光機…）</th><td>✔</td><td>✔</td></tr><tr><th scope="row">X 爬蟲（僅限個人使用）</th><td>✔</td><td>✔ （不作為付費功能）</td></tr><tr><th scope="row">節拍 Reels、最佳截圖</th><td>—</td><td>✔</td></tr><tr><th scope="row">趨勢雷達、品牌色票</th><td>—</td><td>✔</td></tr><tr><th scope="row">漫畫分鏡與拼頁</th><td>—</td><td>✔</td></tr><tr><th scope="row">AI：臉部一致性、CLIP 自動標籤</th><td>—</td><td>✔</td></tr><tr><th scope="row">授權</th><td>MIT</td><td>Ed25519 授權碼（離線驗證）</td></tr><tr><th scope="row">支援</th><td>GitHub Issues</td><td>Email 優先支援</td></tr></tbody></table></div></section>
+<thead><tr><th scope="col">項目</th><th scope="col">免費（MIT）</th><th scope="col">Pro（授權碼，即將推出）</th></tr></thead>
+<tbody><tr><th scope="row">CLI `jiang` + 本機面板</th><td>✔</td><td>✔</td></tr><tr><th scope="row">影像、影片、文件、資料、檔案、網頁、系統工具</th><td>✔</td><td>✔</td></tr><tr><th scope="row">8 個實驗室作品（git 音樂、Shell 時光機…）</th><td>✔</td><td>✔</td></tr><tr><th scope="row">節拍 Reels、最佳截圖</th><td>—</td><td>✔</td></tr><tr><th scope="row">趨勢雷達、品牌色票</th><td>—</td><td>✔</td></tr><tr><th scope="row">漫畫分鏡與拼頁</th><td>—</td><td>✔</td></tr><tr><th scope="row">AI：臉部一致性、CLIP 自動標籤</th><td>—</td><td>✔</td></tr><tr><th scope="row">授權</th><td>MIT</td><td>Ed25519 授權碼（離線驗證）</td></tr><tr><th scope="row">支援</th><td>GitHub Issues</td><td>Email 優先支援</td></tr></tbody></table></div></section>
 </main>
 <footer class="foot"><div class="wrap">
 <p>以 MIT 授權釋出免費層；Pro 模組為商業授權。所有示範輸出皆由本套件實際執行產生，輸入為公有領域 / CC0 範例圖或程式合成資料。</p>

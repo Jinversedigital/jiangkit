@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>社群 · JiangKit</title>
-<meta name="description" content="創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。">
+<meta name="description" content="社群工具：內容行事曆、主題標籤、貼文字數檢查、UTM 連結與 QR code，以及 Pro 趨勢雷達。">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/category/social.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/category/social.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/category/social.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/category/social.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="社群 · JiangKit 匠具">
+<meta property="og:description" content="社群工具：內容行事曆、主題標籤、貼文字數檢查、UTM 連結與 QR code，以及 Pro 趨勢雷達。">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/category/social.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="社群 · JiangKit 匠具">
+<meta name="twitter:description" content="社群工具：內容行事曆、主題標籤、貼文字數檢查、UTM 連結與 QR code，以及 Pro 趨勢雷達。">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -21,20 +42,15 @@
 <section class="wrap sec"><p class="crumbs"><a href="../index.html#tools">工具</a> /</p>
 <h1>📣 社群 <span class="muted small">Social</span></h1>
 <nav class="catnav" aria-label="categories"><a href="media.html">🎬 影像與影片</a><a href="social.html" aria-current="page">📣 社群</a><a href="docs.html">📄 文件與文字</a><a href="data.html">📊 資料表</a><a href="files.html">📁 檔案管理</a><a href="comic.html">🎞️ 漫畫與分鏡</a><a href="web.html">🌐 網頁與品牌</a><a href="ai.html">🧠 AI 視覺</a><a href="system.html">🖥️ 系統</a><a href="experimental.html">🧪 實驗室</a></nav>
-<div class="tools"><article class="tool" id="social.x_scraper">
-<header><h3><code>social x_scraper</code></h3><span class="badge free">免費</span></header>
-<p>X 爬蟲（僅限個人使用，請遵守服務條款）</p><p class="warn">⚠️ 僅限個人使用；請遵守 X 服務條款，不作為付費功能販售。</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[scraper]&quot;</code></p>
-<p class="cli"><span class="k">指令範例</span><code>jiang social x_scraper login   # 僅限個人使用 / personal use only</code></p>
-</article><article class="tool" id="social.trend_radar">
+<div class="tools"><article class="tool" id="social.trend_radar">
 <header><h3><code>social trend_radar</code></h3><span class="badge pro">Pro</span></header>
 <p>上升中的主題標籤／關鍵字與最佳發文時段</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[trends]&quot;</code></p>
+<p class="extra"><span class="k">安裝</span><code>JiangKit Pro（即將推出）</code></p>
 <p class="cli"><span class="k">指令範例</span><code>jiang social trend_radar posts.csv -o trend/</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/trend_radar.png" alt="趨勢雷達圖表（合成資料） — social.trend_radar" width="1320" height="440" loading="lazy" decoding="async"><figcaption>趨勢雷達圖表（合成資料）</figcaption></figure></div>
 </article><article class="tool" id="social.social">
 <header><h3><code>social social</code></h3><span class="badge free">免費</span></header>
 <p>內容行事曆、主題標籤組、貼文字數檢查、UTM 連結、QR code</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[social]&quot;</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[social] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <p class="cli"><span class="k">指令範例</span><code>jiang social social qr https://example.com/jiangkit -o social_qr.png</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/social_qr.png" alt="QR code 輸出 — social.social" width="370" height="370" loading="lazy" decoding="async"><figcaption>QR code 輸出</figcaption></figure></div><pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang social social check -t &#x27;今天的咖啡 ☕ 新作品上線！…&#x27; -p IG,X,Threads
 [OK ] IG           32/2200   tags 2/30  
 [OK ] X            47/280    tags 2/3  

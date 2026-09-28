@@ -3,7 +3,6 @@ media.img                        [Free]  批次圖片：IG/Reels/X 尺寸、浮�
 media.video                      [Free]  ffmpeg 影片：剪輯、合併、9:16、抽幀、GIF、字幕、自動字幕 / ffmpeg video: trim, concat, 9:16, frames, GIF, subtitles, auto-subs
 media.beat_reels                 [Pro]   依音樂節拍自動剪直式 Reels / Beat-synced vertical Reels maker
 media.best_frame                 [Pro]   從影片挑最佳縮圖（清晰度/人臉/構圖） / Pick the best thumbnails from a video (sharpness/faces/composition)
-social.x_scraper                 [Free]  X 爬蟲（僅限個人使用，請遵守服務條款） / X scraper (personal use only; respect the ToS)
 social.trend_radar               [Pro]   上升中的主題標籤／關鍵字與最佳發文時段 / Rising hashtags/keywords and best posting hours
 social.social                    [Free]  內容行事曆、主題標籤組、貼文字數檢查、UTM 連結、QR code / Content calendar, hashtag groups, caption limits, UTM links, QR codes
 docs.doc                         [Free]  PDF 合併/分割/旋轉/壓縮/轉圖/OCR、Markdown/DOCX 轉 PDF（AGPL 隔離模組） / PDF merge/split/rotate/compress/render/OCR, Markdown/DOCX→PDF (AGPL-isolated)

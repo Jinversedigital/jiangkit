@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>File management · JiangKit</title>
-<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<meta name="description" content="File management tools: Batch rename, organise by type, find duplicates, disk usage and incremental (AES-encrypted) backups.">
 <link rel="stylesheet" href="../../assets/style.css">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/en/category/files.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/category/files.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/category/files.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/category/files.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="File management · JiangKit 匠具">
+<meta property="og:description" content="File management tools: Batch rename, organise by type, find duplicates, disk usage and incremental (AES-encrypted) backups.">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/en/category/files.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="File management · JiangKit 匠具">
+<meta name="twitter:description" content="File management tools: Batch rename, organise by type, find duplicates, disk usage and incremental (AES-encrypted) backups.">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -24,7 +45,7 @@
 <div class="tools"><article class="tool" id="files.files">
 <header><h3><code>files files</code></h3><span class="badge free">Free</span></header>
 <p>Batch rename, organise, dedupe, disk usage, incremental (AES-zip) backups</p>
-<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[files]&quot;</code></p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[files] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <pre class="term" tabindex="0" aria-label="Real output"><code>$ jiang files files rename imgs/ -t &#x27;cafe_{n:03d}&#x27; -g &#x27;*.jpg&#x27;   # dry-run
 astronaut.jpg  -&gt;  cafe_001.jpg
 chelsea.jpg  -&gt;  cafe_002.jpg

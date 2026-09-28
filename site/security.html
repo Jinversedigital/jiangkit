@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>安全 · JiangKit</title>
-<meta name="description" content="創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。">
+<meta name="description" content="JiangKit 匠具的安全設計與修正：SSRF、Zip-slip、ffmpeg 注入防護、CSP、Ed25519 授權與稽核結果。">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/security.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/security.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/security.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/security.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="安全報告 · JiangKit 匠具">
+<meta property="og:description" content="JiangKit 匠具的安全設計與修正：SSRF、Zip-slip、ffmpeg 注入防護、CSP、Ed25519 授權與稽核結果。">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/security.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="安全報告 · JiangKit 匠具">
+<meta name="twitter:description" content="JiangKit 匠具的安全設計與修正：SSRF、Zip-slip、ffmpeg 注入防護、CSP、Ed25519 授權與稽核結果。">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -24,7 +45,7 @@
 <h2>稽核結果</h2><div class="table-wrap"><table class="cmp"><tbody><tr><th scope="row">pip-audit</th><td>套件 .venv 136 個依賴、subtitle-studio 36 個、3 份鎖定檔：0 個已知漏洞</td></tr><tr><th scope="row">npm audit</th><td>mockup-studio、invoice-pro、linkinbio-builder、_qa：0 個漏洞</td></tr><tr><th scope="row">bandit</th><td>初始 3 高 / 4 中 / 48 低 → 全數修正或逐行註明理由，最終 0</td></tr><tr><th scope="row">semgrep</th><td>python / javascript / typescript / security-audit / secrets：13 → 5（皆為賣家私鑰檔，不在任何公開檔案或發行檔中）</td></tr><tr><th scope="row">gitleaks</th><td>原始碼無外洩；發行壓縮檔掃描 0 筆</td></tr><tr><th scope="row">pytest</th><td>388 個測試全數通過（含安全測試）</td></tr></tbody></table></div>
 <h2>修正的問題（節錄）</h2><ul class="fixes"><li>舊版 Gradio 儀表板綁定 0.0.0.0 → 新面板預設 127.0.0.1，拒絕對外綁定</li><li>網頁產品把 HMAC 密鑰嵌在 JS（任何人都能產生授權碼）→ 改為 Ed25519 公鑰驗證</li><li>Subtitle Studio：儲存型 XSS、CSRF / DNS rebinding、無 CSP、上傳未驗證 → 已全部修正</li><li>Link-in-Bio：匯入的專案 JSON 可從 &lt;style&gt; 注入 CSS/HTML → 顏色與圖片來源白名單</li><li>sys_tools：PowerShell 通知命令注入 → 參數化並正確跳脫</li><li>Shell 時光機：未加鹽 SHA 雜湊祕密、殘留環境變數檔 → HMAC 金鑰、0600 權限</li><li>Zip-slip、絕對路徑成員、zip bomb；批次改名格式字串注入</li><li>網頁工具 SSRF（含轉址與 DNS rebinding）；ffmpeg 參數與協定注入</li><li>CSV/XLSX 公式注入；HTML 報告跳脫與 CSP；匯出圖片預設移除 EXIF</li><li>AI 模型下載固定 revision 並只用 safetensors；移除非商用 InsightFace 模型</li></ul>
 <h2>誠實聲明</h2>
-<p>用戶端授權檢查（包括 Ed25519）仍可被有心人修改程式碼繞過；更強的保護需要線上啟用。X 爬蟲僅供個人使用，使用者須自行遵守服務條款。</p>
+<p>用戶端授權檢查（包括 Ed25519）仍可被有心人修改程式碼繞過；更強的保護需要線上啟用。</p>
 </section>
 </main>
 <footer class="foot"><div class="wrap">

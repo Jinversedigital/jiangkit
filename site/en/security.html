@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Security · JiangKit</title>
-<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<meta name="description" content="How JiangKit 匠具 handles security: SSRF, zip-slip and ffmpeg injection defences, CSP, Ed25519 licensing and audit results.">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/en/security.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/security.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/security.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/security.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="Security report · JiangKit 匠具">
+<meta property="og:description" content="How JiangKit 匠具 handles security: SSRF, zip-slip and ffmpeg injection defences, CSP, Ed25519 licensing and audit results.">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/en/security.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Security report · JiangKit 匠具">
+<meta name="twitter:description" content="How JiangKit 匠具 handles security: SSRF, zip-slip and ffmpeg injection defences, CSP, Ed25519 licensing and audit results.">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -24,7 +45,7 @@
 <h2>Audit results</h2><div class="table-wrap"><table class="cmp"><tbody><tr><th scope="row">pip-audit</th><td>Suite venv (136 deps), subtitle-studio (36), 3 lock files: 0 known vulnerabilities</td></tr><tr><th scope="row">npm audit</th><td>mockup-studio, invoice-pro, linkinbio-builder, _qa: 0 vulnerabilities</td></tr><tr><th scope="row">bandit</th><td>Initially 3 high / 4 medium / 48 low → fixed or justified inline; final 0</td></tr><tr><th scope="row">semgrep</th><td>python / javascript / typescript / security-audit / secrets: 13 → 5 (all seller-only private keys, never in any public file or release)</td></tr><tr><th scope="row">gitleaks</th><td>No leaks in source; release archives scanned: 0 findings</td></tr><tr><th scope="row">pytest</th><td>388 tests passing (incl. security tests)</td></tr></tbody></table></div>
 <h2>Issues fixed (excerpt)</h2><ul class="fixes"><li>Old Gradio dashboard bound to 0.0.0.0 → new panel defaults to 127.0.0.1 and refuses public binds</li><li>Web products embedded the HMAC secret in JS (anyone could mint keys) → Ed25519 public-key verification</li><li>Subtitle Studio: stored XSS, CSRF / DNS rebinding, no CSP, unvalidated uploads → all fixed</li><li>Link-in-Bio: imported project JSON could inject CSS/HTML via &lt;style&gt; → colour &amp; image-source allow-lists</li><li>sys_tools: PowerShell notification command injection → parameterised and properly quoted</li><li>Shell time machine: unsalted SHA of secrets, leftover env files → keyed HMAC, 0600 permissions</li><li>Zip-slip, absolute members, zip bombs; format-string injection in batch rename</li><li>SSRF in web tools (incl. redirects &amp; DNS rebinding); ffmpeg argument and protocol injection</li><li>CSV/XLSX formula injection; HTML report escaping + CSP; EXIF stripped on image export</li><li>AI model downloads pinned to revisions, safetensors only; non-commercial InsightFace model removed</li></ul>
 <h2>Honest limits</h2>
-<p>Client-side licence checks (Ed25519 included) can still be patched out by a determined user; stronger protection needs online activation. The X scraper is for personal use only and users must respect the ToS.</p>
+<p>Client-side licence checks (Ed25519 included) can still be patched out by a determined user; stronger protection needs online activation.</p>
 </section>
 </main>
 <footer class="foot"><div class="wrap">

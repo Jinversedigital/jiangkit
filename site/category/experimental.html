@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>實驗室 · JiangKit</title>
-<meta name="description" content="創作者與開發者的本機工具箱：一個指令、一個面板、資料不出門。">
+<meta name="description" content="實驗室工具：8 個實驗作品：git 歷史變音樂、Shell 時光機、照片變關卡、聽 CSV、程式碼天氣、亂度時鐘、正規表示式合成、語意 diff。">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/category/experimental.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/category/experimental.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/category/experimental.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/category/experimental.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="實驗室 · JiangKit 匠具">
+<meta property="og:description" content="實驗室工具：8 個實驗作品：git 歷史變音樂、Shell 時光機、照片變關卡、聽 CSV、程式碼天氣、亂度時鐘、正規表示式合成、語意 diff。">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/category/experimental.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="實驗室 · JiangKit 匠具">
+<meta name="twitter:description" content="實驗室工具：8 個實驗作品：git 歷史變音樂、Shell 時光機、照片變關卡、聽 CSV、程式碼天氣、亂度時鐘、正規表示式合成、語意 diff。">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -24,7 +45,7 @@
 <div class="tools"><article class="tool" id="experimental.git_symphony">
 <header><h3><code>experimental git_symphony</code></h3><span class="badge free">免費</span></header>
 <p>把 git 歷史變成音樂</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental git_symphony --repo demo-repo
 commits: 14  authors: 1  duration: 3.5s  chords: 0
   demo                     -&gt; piano    (GM   0)  14 notes
@@ -34,7 +55,7 @@ wrote /tmp/jk_demo/s.wav
 </article><article class="tool" id="experimental.shell_timemachine">
 <header><h3><code>experimental shell_timemachine</code></h3><span class="badge free">免費</span></header>
 <p>Shell 時光機：記錄指令並回答「我昨天在哪個資料夾做了什麼」</p>
-<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;git+https://github.com/Jinversedigital/jiangkit&quot;  (基本安裝)</code></p>
 <pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental shell_timemachine log -n 5
 #1     2026-09-27 13:53:28 [ok ]  /tmp/jk_demo/repo$ npm run build
 #2     2026-09-27 13:53:28 [E1 ]  /tmp/jk_demo/repo$ export API_TOKEN=[REDACTED] &amp;&amp; npm run build
@@ -42,7 +63,7 @@ wrote /tmp/jk_demo/s.wav
 </article><article class="tool" id="experimental.image_to_level">
 <header><h3><code>experimental image_to_level</code></h3><span class="badge free">免費</span></header>
 <p>照片變成可玩的終端機平台關卡</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental image_to_level rocket.jpg --headless --width 64 --height 18
 ################################################################
 #                                                              #
@@ -63,14 +84,14 @@ wrote /tmp/jk_demo/s.wav
 </article><article class="tool" id="experimental.data_sonify">
 <header><h3><code>experimental data_sonify</code></h3><span class="badge free">免費</span></header>
 <p>用耳朵聽 CSV 資料</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental data_sonify sales.csv
 6 rows x 1 voices (sales), 1000 ms/row, 6.8s audio -&gt; /tmp/jk_demo/son.wav
 </code></pre>
 </article><article class="tool" id="experimental.code_weather">
 <header><h3><code>experimental code_weather</code></h3><span class="badge free">免費</span></header>
 <p>程式碼庫天氣預報（變動、複雜度）</p>
-<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental]&quot;</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;jiangkit[experimental] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <p class="cli"><span class="k">指令範例</span><code>jiang experimental code_weather demo-repo --html code_weather.html</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/code_weather.png" alt="程式碼天氣 HTML 報告 — experimental.code_weather" width="1200" height="800" loading="lazy" decoding="async"><figcaption>程式碼天氣 HTML 報告</figcaption></figure></div><pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental code_weather demo-repo
 CODE WEATHER for /tmp/jk_demo/repo  (churn window 90 days)
 
@@ -91,7 +112,7 @@ HTML report -&gt; /tmp/jk_demo/reports/code_weather.html
 </article><article class="tool" id="experimental.entropy_clock">
 <header><h3><code>experimental entropy_clock</code></h3><span class="badge free">免費</span></header>
 <p>系統越亂越凌亂的終端時鐘</p>
-<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;git+https://github.com/Jinversedigital/jiangkit&quot;  (基本安裝)</code></p>
 <pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental entropy_clock --once --mess 0.35
 %           &#x27;        +        &#x27;                             
         █   █@█=        █&amp;█@&amp; ██&#x27;~*     &#x27; █@███ =██%█       
@@ -107,7 +128,7 @@ disk 28% io 0.00 | mem 67% | procs 309 (spread 0.82, churn 0.10)
 </article><article class="tool" id="experimental.regex_from_examples">
 <header><h3><code>experimental regex_from_examples</code></h3><span class="badge free">免費</span></header>
 <p>從正反例子自動合成正規表示式</p>
-<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;git+https://github.com/Jinversedigital/jiangkit&quot;  (基本安裝)</code></p>
 <pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental regex_from_examples -p 2026-09-27 -p 1999-01-05 -p 2024-12-31 -n 2026/09/27 -n 27-09-2026 -n hello
 regex (full match): \d{4}-\d{2}-\d{2}
 anchored form     : ^\d{4}-\d{2}-\d{2}$
@@ -123,7 +144,7 @@ accuracy          : 100.0% on 3 positive / 3 negative examples
 </article><article class="tool" id="experimental.dream_diff">
 <header><h3><code>experimental dream_diff</code></h3><span class="badge free">免費</span></header>
 <p>語意層級的文字差異比對（HTML 報告）</p>
-<p class="extra"><span class="k">安裝</span><code>pip install jiangkit  (基本安裝)</code></p>
+<p class="extra"><span class="k">安裝</span><code>pip install &quot;git+https://github.com/Jinversedigital/jiangkit&quot;  (基本安裝)</code></p>
 <p class="cli"><span class="k">指令範例</span><code>jiang experimental dream_diff v1.txt v2.txt --html diff.html</code></p><div class="shots"><figure class="shot"><img src="../assets/demo/dream_diff.png" alt="夢境差異 HTML 報告 — experimental.dream_diff" width="1200" height="800" loading="lazy" decoding="async"><figcaption>夢境差異 HTML 報告</figcaption></figure></div><pre class="term" tabindex="0" aria-label="實際輸出"><code>$ jiang experimental dream_diff v1.txt v2.txt
 SEMANTIC DIFF: it sounds more certain; hard obligations 0 -&gt; 1; 3 x numbers changed
 

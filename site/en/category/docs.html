@@ -6,9 +6,30 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Documents &amp; text · JiangKit</title>
-<meta name="description" content="A local-first toolbox for creators &amp; developers: one CLI, one panel, your data stays home.">
+<meta name="description" content="Documents &amp; text tools: PDF merge/split/OCR, Markdown to PDF, Chinese text conversion and subtitle tools.">
 <link rel="stylesheet" href="../../assets/style.css">
 <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="canonical" href="https://jinversedigital.github.io/jiangkit/en/category/docs.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://jinversedigital.github.io/jiangkit/category/docs.html">
+<link rel="alternate" hreflang="en" href="https://jinversedigital.github.io/jiangkit/en/category/docs.html">
+<link rel="alternate" hreflang="x-default" href="https://jinversedigital.github.io/jiangkit/category/docs.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JiangKit 匠具">
+<meta property="og:title" content="Documents &amp; text · JiangKit 匠具">
+<meta property="og:description" content="Documents &amp; text tools: PDF merge/split/OCR, Markdown to PDF, Chinese text conversion and subtitle tools.">
+<meta property="og:url" content="https://jinversedigital.github.io/jiangkit/en/category/docs.html">
+<meta property="og:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JiangKit 匠具 — 創作者與開發者的本機工具箱 / A local-first toolbox for creators &amp; developers">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Documents &amp; text · JiangKit 匠具">
+<meta name="twitter:description" content="Documents &amp; text tools: PDF merge/split/OCR, Markdown to PDF, Chinese text conversion and subtitle tools.">
+<meta name="twitter:image" content="https://jinversedigital.github.io/jiangkit/assets/og-image.png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -24,7 +45,7 @@
 <div class="tools"><article class="tool" id="docs.doc">
 <header><h3><code>docs doc</code></h3><span class="badge free">Free</span></header>
 <p>PDF merge/split/rotate/compress/render/OCR, Markdown/DOCX→PDF (AGPL-isolated)</p><p class="note">PyMuPDF is AGPL — isolated in a free module and never bundled.</p>
-<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[docs]&quot;</code></p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[docs] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <pre class="term" tabindex="0" aria-label="Real output"><code>$ jiang docs doc from-images coffee.jpg astro.jpg -o album.pdf
 Combined 2 images -&gt; album.pdf
 $ jiang docs doc split album.pdf --outdir pages/
@@ -36,7 +57,7 @@ album_p002.pdf
 </article><article class="tool" id="docs.text">
 <header><h3><code>docs text</code></h3><span class="badge free">Free</span></header>
 <p>Chinese text &amp; subtitles: OpenCC, subtitle shift/merge/convert, counts, batch replace</p>
-<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[text]&quot;</code></p>
+<p class="extra"><span class="k">Install</span><code>pip install &quot;jiangkit[text] @ git+https://github.com/Jinversedigital/jiangkit&quot;</code></p>
 <pre class="term" tabindex="0" aria-label="Real output"><code>$ jiang docs text count demo.srt
 source                           chars   no-sp     CJK   words   mixed  lines
 /tmp/jk_demo/demo.srt              167     146      39      30      69     12
